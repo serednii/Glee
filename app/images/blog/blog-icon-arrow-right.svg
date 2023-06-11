@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 22px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: FontAwesome5Free-Solid, FontAwesome5Free;
+      }
+    </style>
+  </defs>
+  <text id="angle-right" class="cls-1" x="4.979" y="16.2"><tspan x="4.979"></tspan></text>
+</svg>

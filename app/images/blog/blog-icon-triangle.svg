@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 22px;
+        fill: #fe3e57;
+        text-anchor: middle;
+        font-family: FontAwesome5Free-Solid, FontAwesome5Free;
+      }
+    </style>
+  </defs>
+  <text id="Play" class="cls-1" x="10.017" y="20.102"><tspan x="10.017"></tspan></text>
+</svg>
