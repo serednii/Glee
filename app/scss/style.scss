@@ -114,6 +114,125 @@
 
 }
 
+.footer{
+    background-color: #fff;
+.footer-top{
+        padding: 70px 0 40px;
+        border-bottom: 1px solid #dae4e9;
+        display: flex;
+        color: $footer;
+        gap: 130px;
+        @extend %rubik-400;
+        &__item{
+            .logo{
+                margin-bottom: 30px;
+                display: block;
+            }
+        }
+        a{
+            color: inherit;
+        }
+        &__contact{
+            width: 200px;
+            margin-top: -20px;
+        }  
+        &__nav{
+            width: 150px;
+        }
+        &__item-form{
+            max-width: 270px;
+        }
+        &__address,
+        &__phone,
+        &__email{
+            margin-bottom: 25px;
+            display: block;
+        }
+        &__address::before{
+            content: 'address:';
+            text-transform: uppercase;
+        }
+        &__phone::before{
+            content: 'telephone:';
+            text-transform: uppercase;
+        }
+        &__email::before{
+            content: 'email:';
+            text-transform: uppercase;
+        }
+        &__title{
+            color: #1f2044;
+            text-transform: uppercase;
+            @extend %dmsans-700;
+            font-size: 16px;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+        &__link{
+            margin-bottom: 20px;
+            display: block;
+        }
+        &__text{
+            margin-bottom: 38px;
+        }
+        &__form-input{
+            background-color: #fef7f0;
+            max-width: 170px;
+            width: 100%;
+            border: none;
+            padding: 12px 10px 12px 15px;
+            &::placeholder{
+                color: #234969;
+                font-size: 12px;
+            }
+        }
+        &__form-btn{
+            background-color: $accent;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            padding: 12px 14px;
+            margin-left: -4px;
+        }
+    }
+    .footer-buttom{
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: $footer;
+        &__page{
+            display: flex;
+             gap: 20px;
+               span{
+                width: 1px;
+                    height: 12px;
+                background-color: $footer;
+                display: inline-block;
+            }
+        }
+        
+            // position: relative;
+         
+        
+        // &__page-list:not(:last-child):before{
+        //     content: '';
+        //     position: absolute;
+        //     width: 1px;
+        //     height: 12px;
+        //     background-color: $footer;
+        //     left: 10px;
+        // }
+      
+
+        &__page-link{
+            color: $footer;
+        }
+       
+    }
+}
+
 
 
 
