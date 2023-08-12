@@ -16,7 +16,7 @@
     "ion-rangeslider": "^2.3.1",
     "jquery-form-styler": "^2.0.2",
     "mixitup": "^3.3.1",
-    "rateyo": "^2.3.2",
+    "rateyo": "^2.3.5",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
@@ -26,6 +26,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "jquery": "^3.6.0",
+    "rangeslider.js": "^2.3.3",
     "sass": "^1.36.0"
   },
   "description": ""
