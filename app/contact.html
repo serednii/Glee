@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Glee</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
@@ -74,7 +75,7 @@
     
     <section class="top">
       <div class="top-container">
-        <h2 class="top__title title">About Us</h2>
+        <h2 class="top__title title">Contact</h2>
         <div class="bleadcrumbs">
           <ul class="bleadcrumbs__list">
             <li class="bleadcrumbs__item">
@@ -84,7 +85,7 @@
             </li>
             <li class="bleadcrumbs__item">
               <a class="bleadcrumbs__link" href="#">
-                About Us
+                Contact
               </a>
             </li>
           </ul>
@@ -92,170 +93,76 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="contact">
       <div class="container1170">
-        <div class="about-us__inner">
-          <img class="about-us__img" src="images/about-us.png" alt="about-us images">
-          <div class="about-us__content">
-            <div class="about-us__time">
-              <div class="about-us__years">12</div>
-              <div class="about-us__time-left">
-                <p>Years</p>
-                <p>Experience</p>
-                <p>Working</p>
-              </div>
-            </div>
-            <h4 class="about-us__title">Mission of our creative house</h4>
-            <p class="about-us__text">
-              consectetur adipisicing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-              ea commodo consequat. Duis aute irure dolor in reprehenderit 
-              in voluptate velit esse cillum
-            </p>
-            <ul class="about-us__info">
-              <li class="about-us__item">
-                <img class="about-us__img" src="images/icons/about_projects.svg" alt="about-us icon">
-                <div class="about-us__item-text">
-                  <h4 class="about-us__num">520+</h4>
-                  <p class="about-us__label">Projects</p>
-                </div>
+        <div class="contact__inner">
+          <div class="contact__info">
+            <h5 class="contact__info-subtitle">
+              Write Here
+            </h5>
+            <h3 class="contact__info-title">
+              Get In Touch
+            </h3>
+            <ul class="contact__info-list">
+              <li class="contact__info-item">
+                <a class="contact__info-img--link" href="#">
+                  <img class="contact__info-img" src="images/contact/maps.svg" alt="maps images">
+                </a>
+                <h4 class="contact__info-item-title">Address</h4>
+                <p class="contact__info-text">
+                  2416 Mapleview Drive <br>
+                  Tampa, FL 33634</p>
               </li>
-              <li class="about-us__item">
-                <img class="about-us__img" src="images/icons/about_revenue.svg" alt="about-us icon">
-                <div class="about-us__item-text">
-                  <h4 class="about-us__num">$4M</h4>
-                  <p class="about-us__label">Revenue</p>
-                </div>
+              <li class="contact__info-item">
+                <a class="contact__info-img--link" href="#">
+                  <img class="contact__info-img" src="images/contact/email.svg" alt="email images">
+                </a>
+                <h4 class="contact__info-item-title">Our Email</h4>
+                <div class="contact__info-text"><span>Main Email : </span>contact@website.com</div>
+                <div class="contact__info-text"><span>Inquiries : </span>Info@mail.com</div>
               </li>
-              <li class="about-us__item">
-                <img class="about-us__img" src="images/icons/about_awards.svg" alt="about-us icon">
-                <div class="about-us__item-text">
-                  <h4 class="about-us__num">250</h4>
-                  <p class="about-us__label">Awards</p>
-                </div>
+              <li class="contact__info-item">
+                <a class="contact__info-img--link" href="#">
+                  <img class="contact__info-img" src="images/contact/Phone.svg" alt="Phone images">
+                </a>
+                <h4 class="contact__info-item-title">Our Phone</h4>
+                <a class="contact__info-text" href="tel:+0029129102320"><span>Office Telephone : </span>0029129102320</a><br>
+                <a class="contact__info-text" href="tel:+000232439493"><span>Mobile : </span>000 2324 39493</a>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
+          <div class="contact-form__map">
+            <form class="contact-form product__comments-form" action="#">
+            <div class="contact-form__box-input">
+              <div class="contact-form__input">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.687" height="13.16" viewBox="0 0 13.687 13.16">
+                  <path class="cls-1" d="M754.382,2897.17H741.549a0.426,0.426,0,0,1-.428-0.42,6.85,6.85,0,0,1,13.689,0A0.426,0.426,0,0,1,754.382,2897.17Zm-12.39-.83h11.947A6.011,6.011,0,0,0,741.992,2896.34Zm5.974-5.34a3.5,3.5,0,1,1,3.636-3.5A3.574,3.574,0,0,1,747.966,2891Zm0-6.17a2.672,2.672,0,1,0,2.78,2.67A2.732,2.732,0,0,0,747.966,2884.83Z" transform="translate(-741.125 -2884)"/>
+                </svg>                
+                <input class="contact-form__text-input contact-form__input-name" placeholder="Name" type="text" >
+              </div>
+              <div class="contact-form__input">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.38" viewBox="0 0 18 12.38">
+                  <path class="cls-1" d="M1182.71,2896.99h-15.42a1.262,1.262,0,0,1-1.29-1.23v-9.9a1.27,1.27,0,0,1,1.29-1.24h15.42a1.27,1.27,0,0,1,1.29,1.24v9.9A1.262,1.262,0,0,1,1182.71,2896.99Zm-15.42-11.54a0.417,0.417,0,0,0-.43.41v9.9a0.423,0.423,0,0,0,.43.41h15.42a0.423,0.423,0,0,0,.43-0.41v-9.9a0.417,0.417,0,0,0-.43-0.41h-15.42Zm7.71,5.59a1.319,1.319,0,0,1-.74-0.23l-7.78-5.24a0.4,0.4,0,0,1-.1-0.57,0.428,0.428,0,0,1,.59-0.1l7.78,5.24a0.454,0.454,0,0,0,.5,0l7.78-5.24a0.428,0.428,0,0,1,.59.1,0.4,0.4,0,0,1-.1.57l-7.78,5.24A1.319,1.319,0,0,1,1175,2891.04Zm8.32,5.71a0.423,0.423,0,0,1-.3-0.12l-6.62-6.36a0.423,0.423,0,0,1,0-.59,0.448,0.448,0,0,1,.61,0l6.61,6.37a0.394,0.394,0,0,1,0,.58A0.423,0.423,0,0,1,1183.32,2896.75Zm-16.64,0a0.423,0.423,0,0,1-.3-0.12,0.394,0.394,0,0,1,0-.58l6.61-6.37a0.448,0.448,0,0,1,.61,0,0.423,0.423,0,0,1,0,.59l-6.62,6.36A0.423,0.423,0,0,1,1166.68,2896.75Z" transform="translate(-1166 -2884.62)"/>
+                </svg>                
+                <input class="contact-form__text-input contact-form__input-email" placeholder="email" type="text">
+              </div>
+            </div>
+            <div class="contact-form__textarea-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14.81" viewBox="0 0 18 14.81">
+                <path class="cls-1" d="M1169,2970a0.415,0.415,0,0,1-.16-0.03,0.42,0.42,0,0,1-.27-0.38v-2.07h-1.28a1.262,1.262,0,0,1-1.29-1.23v-9.87a1.262,1.262,0,0,1,1.29-1.23h15.42a1.262,1.262,0,0,1,1.29,1.23v9.87a1.262,1.262,0,0,1-1.29,1.23h-10.94l-2.47,2.36A0.423,0.423,0,0,1,1169,2970Zm-1.71-13.99a0.423,0.423,0,0,0-.43.41v9.87a0.423,0.423,0,0,0,.43.41H1169a0.417,0.417,0,0,1,.43.41v1.49l1.86-1.78a0.407,0.407,0,0,1,.3-0.12h11.12a0.423,0.423,0,0,0,.43-0.41v-9.87a0.423,0.423,0,0,0-.43-0.41h-15.42Zm4.77,5.34a0.646,0.646,0,1,1-.65-0.61A0.63,0.63,0,0,1,1172.06,2961.35Zm3.58,0a0.64,0.64,0,0,1-1.28,0,0.619,0.619,0,0,1,.64-0.61A0.626,0.626,0,0,1,1175.64,2961.35Zm3.35,0a0.646,0.646,0,1,1-.65-0.61A0.63,0.63,0,0,1,1178.99,2961.35Z" transform="translate(-1166 -2955.19)"/>
+              </svg>
+              <textarea class="contact-form__textarea" placeholder="Comment"></textarea>
+            </div>
+            <button class="contact-form__btn" type="submit">SEND MESSAGE</button>
+            </form>
+            <div id="map">
 
-    <div class="statistics">
-      <div class="container">
-        <ul class="statistics__list">
-          <li class="statistics__item">
-            <img class="statistics__img" src="images/icons/1.svg" alt="statistics icon">
-            <div class="statistics__item-text">
-              <h4 class="statistics__title">99%</h4>
-              <p class="statistics__text">Satisﬁed Clients Rate</p>
             </div>
-          </li>
-          <li class="statistics__item">
-            <img class="statistics__img" src="images/icons/2.svg" alt="statistics icon">
-            <div class="statistics__item-text">
-              <h4 class="statistics__title">5020+</h4>
-              <p class="statistics__text">Products Delivered</p>
-            </div>
-          </li>
-          <li class="statistics__item">
-            <img class="statistics__img" src="images/icons/3.svg" alt="statistics icon">
-            <div class="statistics__item-text">
-              <h4 class="statistics__title">23hr</h4>
-              <p class="statistics__text">Daily Working Time</p>
-            </div>
-          </li>
-          <li class="statistics__item">
-            <img class="statistics__img" src="images/icons/4.svg" alt="statistics icon">
-            <div class="statistics__item-text">
-              <h4 class="statistics__title">140+</h4>
-              <p class="statistics__text">Brands in Store</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <section class="ourteam">
-      <div class="container1170">
-        <div class="ourteam__inner">
-          <div class="ourteam__left">
-            <h2 class="ourteam__title title">Our Team</h2>
-            <p class="ourteam__text">
-              Lorem ipsum dolor sit amet, conse ctetur 
-              adipi sicing elit, sed do eiusmod tempor 
-              inciLorem ipsum dolor sit amet, consectetur 
-              adipisicing elit, sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation 
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-            <a class="ourteam__btn" href="#">
-              Join With US
-              <img src="images/ourteam/our/arrow-team.svg" alt="arrow team">
-            </a>
-          </div>
-          
-          <div class="ourteam__content">
-            <div class="ourteam__items">
-              <div class="ourteam__item">
-                <img class="ourteam__img" src="images/ourteam/our/our_eliza.jpg" alt="foto ourteam">
-                <div class="ourteam__box">
-                  <div class="ourteam__box-left">
-                    <h3 class="ourteam__item-title">Eliza Elliot</h3>
-                    <p class="ourteam__item-text">Commodo tempor</p>
-                  </div>
-                  <div class="ourteam__social">
-                    <img class="ourteam__social-img" src="images/ourteam/our/our_instagram.svg" alt="instagram icon">
-                    <img class="ourteam__social-img" src="images/ourteam/our/our_google.svg" alt="google+ icon/our google.svg">
-                </div>
-              </div>
-            </div>
-              <div class="ourteam__item">
-                <img class="ourteam__img" src="images/ourteam/our/our_roscoe.jpg" alt="foto ourteam">
-                <div class="ourteam__box">
-                  <div class="ourteam__box-left">
-                    <h3 class="ourteam__item-title">Roscoe A.</h3>
-                    <p class="ourteam__item-text">Commodo tempor</p>
-                  </div>
-                  <div class="ourteam__social">
-                    <img class="ourteam__social-img" src="images/ourteam/our/our_instagram.svg" alt="instagram icon">
-                    <img class="ourteam__social-img" src="images/ourteam/our/our_google.svg" alt="google+ icon/our google.svg">
-                </div>
-              </div>
-            </div>
-              <div class="ourteam__item">
-                <img class="ourteam__img" src="images/ourteam/our/our_ruby.jpg" alt="foto ourteam">
-                <div class="ourteam__box">
-                  <div class="ourteam__box-left">
-                    <h3 class="ourteam__item-title">Ruby M.</h3>
-                    <p class="ourteam__item-text">Commodo tempor</p>
-                  </div>
-                  <div class="ourteam__social">
-                    <img class="ourteam__social-img" src="images/ourteam/our/our_instagram.svg" alt="instagram icon">
-                    <img class="ourteam__social-img" src="images/ourteam/our/our_google.svg" alt="google+ icon/our google.svg">
-                </div>
-              </div>
-            </div>
-              <div class="ourteam__item">
-                <img class="ourteam__img" src="images/ourteam/our/our_marie.jpg" alt="foto ourteam">
-                <div class="ourteam__box">
-                  <div class="ourteam__box-left">
-                    <h3 class="ourteam__item-title">Marie F. Bloss</h3>
-                    <p class="ourteam__item-text   ">Commodo tempor</p>
-                  </div>
-                  <div class="ourteam__social">
-                    <img class="ourteam__social-img" src="images/ourteam/our/our_instagram.svg" alt="instagram icon">
-                    <img class="ourteam__social-img" src="images/ourteam/our/our_google.svg" alt="google+ icon/our google.svg">
-                </div>
-              </div>
-            </div>
-
-          </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <section class="blog">
       <div class="container1170">
@@ -345,6 +252,7 @@
       <div class="container blog__fon">
       </div>
     </section>
+  
   </main>
   <footer class="footer">
     <div class="container1170">
@@ -435,7 +343,251 @@
     </div>
   </footer>
 </div>
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+  ({key: "", v: "weekly"});
+  
+  
+  let map;
 
+async function initMap() {
+const { Map } = await google.maps.importLibrary("maps");
+
+map = new Map(document.getElementById("map"), {
+  center: { lat: 40.71432268277566, lng: -74.00634474809839 },
+  zoom: 13,
+  styles:[
+  {
+      "featureType": "all",
+      "elementType": "geometry.stroke",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          }
+      ]
+  },
+  {
+      "featureType": "administrative",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "administrative",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          },
+          {
+              "color": "#a31645"
+          }
+      ]
+  },
+  {
+      "featureType": "landscape",
+      "elementType": "all",
+      "stylers": [
+          {
+              "weight": "3.79"
+          },
+          {
+              "visibility": "on"
+          },
+          {
+              "color": "#ffecf0"
+          }
+      ]
+  },
+  {
+      "featureType": "landscape",
+      "elementType": "geometry",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
+  },
+  {
+      "featureType": "landscape",
+      "elementType": "geometry.stroke",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
+  },
+  {
+      "featureType": "poi",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          },
+          {
+              "color": "#a31645"
+          }
+      ]
+  },
+  {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [
+          {
+              "saturation": "0"
+          },
+          {
+              "lightness": "0"
+          },
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "poi",
+      "elementType": "geometry.stroke",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "poi.business",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          },
+          {
+              "color": "#d89ca8"
+          }
+      ]
+  },
+  {
+      "featureType": "poi.business",
+      "elementType": "geometry",
+      "stylers": [
+          {
+              "visibility": "on"
+          }
+      ]
+  },
+  {
+      "featureType": "poi.business",
+      "elementType": "geometry.fill",
+      "stylers": [
+          {
+              "visibility": "on"
+          },
+          {
+              "saturation": "0"
+          }
+      ]
+  },
+  {
+      "featureType": "poi.business",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "color": "#a31645"
+          }
+      ]
+  },
+  {
+      "featureType": "poi.business",
+      "elementType": "labels.icon",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          },
+          {
+              "lightness": "84"
+          }
+      ]
+  },
+  {
+      "featureType": "road",
+      "elementType": "all",
+      "stylers": [
+          {
+              "saturation": -100
+          },
+          {
+              "lightness": 45
+          }
+      ]
+  },
+  {
+      "featureType": "road.highway",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "simplified"
+          }
+      ]
+  },
+  {
+      "featureType": "road.arterial",
+      "elementType": "labels.icon",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "transit",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  },
+  {
+      "featureType": "water",
+      "elementType": "all",
+      "stylers": [
+          {
+              "color": "#d89ca8"
+          },
+          {
+              "visibility": "on"
+          }
+      ]
+  },
+  {
+      "featureType": "water",
+      "elementType": "geometry.fill",
+      "stylers": [
+          {
+              "visibility": "on"
+          },
+          {
+              "color": "#fedce3"
+          }
+      ]
+  },
+  {
+      "featureType": "water",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "off"
+          }
+      ]
+  }
+]
+});
+}
+
+initMap();
+
+</script>
   <script src="js/main.min.js"></script>
 </body>
 

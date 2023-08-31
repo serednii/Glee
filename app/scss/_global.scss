@@ -1,6 +1,6 @@
  body{
     font-size: 15px;
-    color: $title;
+    color: #243f4d;
     @extend %rubik-500;
  }
 
@@ -83,6 +83,7 @@
    &__item{
       border: 1px solid $accent;
       padding: 18px 20px;
+
    }
    &__item--active{
       background-color: $accent;

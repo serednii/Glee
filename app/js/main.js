@@ -7,6 +7,8 @@ $(function () {
         autoplaySpeed: 2000
       });
 
+     
+
       $('.filter-price__input').ionRangeSlider({
         type: "double",
         prefix: "$",
@@ -39,6 +41,26 @@ $(function () {
         fade: true
       });
       
+      $('.product-tabs__top-item').on('click', function (e) {
+        e.preventDefault();
+        $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+        $(this).addClass('product-tabs__top-item--active');
+    
+        $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+        $($(this).attr('href')).addClass('product-tabs__content-item--active');
+      });
+
+    
+      $('.related__items').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+    
+        // autoplay: true,
+        // autoplaySpeed: 2000
+      });
+
       $('.select-style, .product-one__num').styler();
 
       $(".star").rateYo({
@@ -67,3 +89,4 @@ $(function () {
       var mixer2 = mixitup(containerEl2, config);
       
     });
+
