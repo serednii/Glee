@@ -104,4 +104,16 @@
  }
  
 
- 
+ @media(max-width: 620px){
+   .title{
+      font-size: 33px;
+      line-height: 36px;
+   }
+ }
+ @media(max-width: 375px){
+   .title{
+      font-size: 27px;
+      line-height: 25px;
+      margin-bottom: 30px;
+   }
+ }

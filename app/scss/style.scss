@@ -12,6 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: conter;
+        flex-wrap: wrap;
     }
 }
 
@@ -22,7 +23,9 @@
         display: flex;
         
     }
-    
+    &__btn{
+        display: none;
+    }
     &__list-item + .menu__list-item{
         padding-left: 35px
     
@@ -124,7 +127,7 @@
         border-bottom: 1px solid #dae4e9;
         display: flex;
         color: $footer;
-        gap: 130px;
+        gap: 10%;
         @extend %rubik-400;
         &__item{
             .logo{
@@ -179,6 +182,7 @@
             margin-bottom: 38px;
         }
         &__form-input{
+            outline: 1px solid transparent;
             background-color: #fef7f0;
             max-width: 170px;
             width: 100%;
@@ -187,6 +191,9 @@
             &::placeholder{
                 color: #234969;
                 font-size: 12px;
+            }
+            &:focus{
+                outline: 1px solid $accent;
             }
         }
         &__form-btn{
@@ -201,30 +208,17 @@
         align-items: center;
         font-size: 14px;
         color: $footer;
+        flex-wrap: wrap;
         &__page{
             display: flex;
              gap: 20px;
                span{
                 width: 1px;
-                    height: 12px;
+                height: 12px;
                 background-color: $footer;
                 display: inline-block;
             }
         }
-        
-            // position: relative;
-         
-        
-        // &__page-list:not(:last-child):before{
-        //     content: '';
-        //     position: absolute;
-        //     width: 1px;
-        //     height: 12px;
-        //     background-color: $footer;
-        //     left: 10px;
-        // }
-      
-
         &__page-link{
             color: $footer;
         }
@@ -594,7 +588,7 @@
         @extend %dmsans-700;
         font-size: 20px;
         color: #191919; 
-        width: 370px;
+        max-width: 370px;
         height: 245px;
     }
     .mixitup-control-active{
@@ -2063,9 +2057,14 @@
         border-radius: 5px;
     }
 }
-@import 'media';
 
 
-
+@import 'media__header';
+@import 'media__footer';
+@import 'media__top-slider';
+@import 'media__categories';
+@import 'media_blurb';
+@import 'media_design';
+@import 'media_blog';
 
   
