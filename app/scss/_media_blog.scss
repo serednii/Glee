@@ -49,7 +49,9 @@
         row-gap: 15px;
         .blog__partner-img{
             width: 165px;
-            margin: 0 auto;
+            img{
+                margin: 0 auto;
+            }
         }
     }
 }
