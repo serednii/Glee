@@ -25,6 +25,14 @@
  .logo{
     flex-basis: 148px;
     flex-shrink: 0;
+    padding: 5px;
+    &:focus{
+      background-color: #f9fafb;
+      border-color: #f9fafb;
+      box-shadow: 0 0 0 0.25rem rgba(211,212,213,.5);
+      outline: 0;
+      border-radius: 10px;
+  }
     img{
         width: 148px;
         height: 50px;
@@ -69,6 +77,16 @@
          }
       }
    }
+   &__link{
+      padding: 3px;
+      &:focus{
+         background-color: #f9fafb;
+         border-color: #f9fafb;
+         box-shadow: 0 0 0 0.25rem rgba(211,212,213,.5);
+         outline: 0;
+         border-radius: 10px;
+     }
+   }
  }
 
  .pagination{
@@ -92,6 +110,11 @@
       @extend %rubik-400;
       font-size: 16px;
       color: #243f4d;
+      &:focus{
+         border-color: #1a1e21;
+         outline: 0;
+         box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+     }
    }
    &__link--active{
       color: #fff;
@@ -100,6 +123,11 @@
       @extend %rubik-400;
       font-size: 16px;
       color: #243f4d;
+      &:focus{
+         border-color: #1a1e21;
+         outline: 0;
+         box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+     }
    }
  }
  
