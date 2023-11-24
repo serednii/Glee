@@ -12,7 +12,7 @@ const sync = require('browser-sync').create();
 
 function styles(){
     return src('app/scss/style.scss')
-   //.pipe(sass ({outputStyle:"expanded"}).on('error', sass.logError))//не зжимае файл
+  //  .pipe(sass ({outputStyle:"expanded"}).on('error', sass.logError))//не зжимае файл
    .pipe(sass ({outputStyle:"compressed"}).on('error', sass.logError))//зжимае файл
    .pipe(concat('style.min.css'))
    .pipe(autoprefixer({
@@ -28,6 +28,7 @@ function browser(){
     server:{
       baseDir:'app/'
     },
+    port: 3030,
     notify: false
   })
 }
@@ -35,10 +36,13 @@ function browser(){
 function scripts(){
   return src(
     [
-      'node_modules/jquery/dist/jquery.js',
-      'node_modules/slick-carousel/slick/slick.js', //Display multiple slick image slider and carousel using shortcode with category.
-      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js', //Также fancyBox позволяет группировать картинки, создавая галереи,
+       'node_modules/jquery/dist/jquery.js',
+       'node_modules/slick-carousel/slick/slick.js', //Display multiple slick image slider and carousel using shortcode with category.
+       'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js', //Также fancyBox позволяет группировать картинки, создавая галереи,
       'node_modules/rateyo/src/jquery.rateyo.js', //рейтингами звезд
+       'node_modules/mixitup/dist/mixitup.js', 
+       'node_modules/mixitup/dist/mixitup.min.js',
+       //рейтингами звезд
       'node_modules/ion-rangeslider/js/ion.rangeSlider.js', //Плагин ion.rangeSlider  динамически менять шаг ползунка?
       'node_modules/jquery-form-styler/dist/jquery.formstyler.js', //плагин для стилизации селектов, чекбоксов, радиокнопок, файловых и числовых полей
       'app/js/main.js'

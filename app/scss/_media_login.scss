@@ -1,0 +1,16 @@
+@media(max-width: 620px){
+    .top{
+        margin-bottom: 60px;
+    }
+    .mold{
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 375px){
+    .mold{
+       &__help{
+        flex-wrap: wrap;
+       } 
+    }
+}
