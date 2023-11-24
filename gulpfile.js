@@ -12,8 +12,8 @@ const sync = require('browser-sync').create();
 
 function styles(){
     return src('app/scss/style.scss')
-   .pipe(sass ({outputStyle:"expanded"}).on('error', sass.logError))//не зжимае файл
-  //  .pipe(sass ({outputStyle:"compressed"}).on('error', sass.logError))//зжимае файл
+  //  .pipe(sass ({outputStyle:"expanded"}).on('error', sass.logError))//не зжимае файл
+   .pipe(sass ({outputStyle:"compressed"}).on('error', sass.logError))//зжимае файл
    .pipe(concat('style.min.css'))
    .pipe(autoprefixer({
        overrideBrowserslist:['last 10 versions'],
@@ -28,6 +28,7 @@ function browser(){
     server:{
       baseDir:'app/'
     },
+    port: 3030,
     notify: false
   })
 }
@@ -47,7 +48,7 @@ function scripts(){
       'app/js/main.js'
     ])  
      .pipe(concat('main.min.js'))
-    // .pipe(uglify()) // мініиізує файл
+    .pipe(uglify()) // мініиізує файл
      .pipe(dest('app/js'))
      .pipe(sync.stream())
 }

@@ -38,9 +38,11 @@
         @extend %rubik-500;
         white-space: nowrap;
         padding: 3px 5px;
+        border-bottom: 1px solid transparent;
+        transition: all .5s;
         &:hover{
             color: $accent;
-            border-bottom: 1px solid $accent;
+            border-bottom-color: $accent;
             @extend %rubik-400;
         }
         &:focus{
