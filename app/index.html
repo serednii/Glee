@@ -5,12 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Описание проекта">
   <title>Glee</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"> -->
   <link rel="stylesheet" href="css/style.min.css">
+  <meta name="application-name" content="Главная страница — Описание проекта">
+  <meta name="apple-mobile-web-app-title" content="Главная страница — Описание проекта">
+  <meta property="og:title" content="Главная страница — Описание проекта">
+  <meta property="og:locale" content="en">
+  <meta property="og:description" content="Описание проекта">
+  <meta property="og:url" content="http://localhost:3000">
+  <meta property="og:site_name" content="Описание проекта">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://localhost:3000/img/cover.jpg">
 </head>
 
 <body>
@@ -48,11 +58,11 @@
             <img class="user-nav__link-img" src="images/header/icons/search.svg" alt="search icon">
           </a>
           <div class="user-nav__inner">
-            <a class="user-nav__inner-link">
+            <a href="#" class="user-nav__inner-link">
               <img class="user-nav__link-img" src="images/header/icons/heart.svg" alt="heart icon">
               <span class="user-nav__num">0</span>
             </a>
-            <a class="user-nav__inner-link">
+            <a href="#" class="user-nav__inner-link">
               <img class="user-nav__link-img" src="images/header/icons/cart.svg" alt="cart icon">
               <span class="user-nav__num">0</span>
             </a>
@@ -84,7 +94,11 @@
                 <img  class="top-slider__arrow" src="images/Shape1.svg" alt="button arrow">
               </a>
             </div>
-            <img class="top-slider__img" src="images/slider/1.png" alt="slider images">
+            <picture>
+              <source srcset="./images/slider/1.webp" type="image/webp">
+              <source srcset="./images/slider/1.avif" type="image/avif">
+              <img class="top-slider__img" src="images/slider/1.png"  alt="slider images">
+            </picture>
           </div>
           <div class="top-slider__item">
             <div class="top-slider__content">
@@ -101,7 +115,11 @@
                 <img  class="top-slider__arrow" src="images/Shape1.svg" alt="button arrow">
               </a>
             </div>
-            <img class="top-slider__img" src="images/slider/2.png" alt="slider images">
+            <picture>
+              <source srcset="./images/slider/2.webp" type="image/webp">
+              <source srcset="./images/slider/2.avif" type="image/avif">
+              <img class="top-slider__img" src="images/slider/2.png"  alt="slider images">
+            </picture>
           </div>
           <div class="top-slider__item">
             <div class="top-slider__content">
@@ -118,7 +136,11 @@
                 <img  class="top-slider__arrow" src="images/Shape1.svg" alt="button arrow">
               </a>
             </div>
-            <img class="top-slider__img" src="images/slider/3.png" alt="slider images">
+            <picture>
+              <source srcset="./images/slider/3.webp" type="image/webp">
+              <source srcset="./images/slider/3.avif" type="image/avif">
+              <img class="top-slider__img" src="images/slider/3.png"  alt="slider images">
+            </picture>
           </div>
         </div>
       </div>
@@ -169,7 +191,7 @@
             <div class="categories__content">
               <div class="categories-item mix category-a">
                 <a href="product.html">
-                  <img class="categories-item-img" src="images/product/chair-1.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-1.webp" alt="chair images">
                 </a>
                 <a class="categories-item-title" href="#">Wooden radio</a>
                 <span class="categories-item-prise">$29.00</span>  
@@ -195,7 +217,7 @@
               </div>
               <div class="categories-item mix category-a">
                 <a href="product.html">
-                  <img class="categories-item-img" src="images/product/chair-2.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-2.webp" alt="chair images">
                 </a>
                 <a class="categories-item-title" href="#">Wooden chair</a>
                 <span class="categories-item-prise">$29.00</span>  
@@ -221,7 +243,7 @@
               </div>
               <div class="categories-item mix category-b">
                 <a href="product.html">
-                  <img class="categories-item-img" src="images/product/chair-3.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-3.webp" alt="chair images">
                 </a>
                 <a class="categories-item-title" href="#">White chair</a>
                 <span class="categories-item-prise">$29.00</span>  
@@ -247,7 +269,7 @@
               </div>
               <div class="categories-item mix category-b">
                 <a href="product.html">
-                  <img class="categories-item-img" src="images/product/chair-4.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-4.webp" alt="chair images">
                 </a>
                 <a class="categories-item-title" href="#">Retro table</a>
                 <span class="categories-item-prise">$29.00</span>  
@@ -273,7 +295,7 @@
               </div>
               <div class="categories-item mix category-c">
                 <a href="product.html">
-                  <img class="categories-item-img" src="images/product/chair-5.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-5.webp" alt="chair images">
                 </a>
                 <a class="categories-item-title" href="#">Wooden radio</a>
                 <span class="categories-item-prise">$29.00</span>  
@@ -299,7 +321,7 @@
               </div>
               <div class="categories-item mix category-c">
                 <a href="product.html">
-                  <img class="categories-item-img" src="images/product/chair-6.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-6.webp" alt="chair images">
                 </a>
                 <a class="categories-item-title" href="#">Wooden chair</a>
                 <span class="categories-item-prise">$29.00</span> 
@@ -325,7 +347,7 @@
               </div>
               <div class="categories-item mix category-d">
                 <a href="product.html">
-                  <img class="categories-item-img" src="images/product/chair-7.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-7.webp" alt="chair images">
                 </a>
                 <a class="categories-item-title" href="#">White chair</a>
                 <span class="categories-item-prise">$29.00</span> 
@@ -351,7 +373,7 @@
               </div>
               <div class="categories-item mix category-d">
                 <a href="product.html">
-                  <img class="categories-item-img" src="images/product/chair-8.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-8.webp" alt="chair images">
                 </a>
                 <a class="categories-item-title" href="#">Retro table</a>
                 <span class="categories-item-prise">$29.00</span> 
@@ -387,7 +409,7 @@
         <div class="blurb__inner">
           <div class="blurb__items">
             <div class="blurb__item">
-              <img class="blurb__item-img" src="images/product/lamp-left.png" alt="blurb images">
+              <img class="blurb__item-img" src="images/product/lamp-left.webp" alt="blurb images">
               <div class="blurb__item-content">
               <h2 class="blurb__item-title">
                 Mirum Notare Tellus
@@ -413,7 +435,7 @@
             </div>
             </div>
             <div class="blurb__item">
-              <img class="blurb__item-img" src="images/product/lamp-right.png" alt="blurb images">
+              <img class="blurb__item-img" src="images/product/lamp-right.webp" alt="blurb images">
               <div class="blurb__item-content">
               <h2 class="blurb__item-title">
                 Malesuada Tempor Euismod
@@ -457,42 +479,42 @@
         </div>
         <div class="container1170">
           <div class="design__content">
-            <div class="design__item mix class-a" style="background-image: url('images/design/d1.jpg');">
+            <div class="design__item mix class-a" style="background-image: url('images/design/d1.webp');">
               <div class="design__text">
                 <h2 class="design__item-title">Beat Flat Pendant</h2>
                 <h3 class="design__item-text">Black</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-a" style="background-image: url('images/design/d2.jpg');">
+            <div class="design__item mix class-a" style="background-image: url('images/design/d2.webp');">
               <div class="design__text">
                 <h2 class="design__item-title">Lampe Sur Pieds</h2>
                 <h3 class="design__item-text">Bamboo</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-b" style="background-image: url('images/design/d3.jpg');">
+            <div class="design__item mix class-b" style="background-image: url('images/design/d3.webp');">
               <div class="design__text">
                 <h2 class="design__item-title">Rattan Rocking</h2>
                 <h3 class="design__item-text">Chair</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-c" style="background-image: url('images/design/d4.jpg');">
+            <div class="design__item mix class-c" style="background-image: url('images/design/d4.webp');">
               <div class="design__text">
                 <h2 class="design__item-title">Rattan Rocking</h2>
                 <h3 class="design__item-text">Chair</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-d" style="background-image: url('images/design/d5.jpg');">
+            <div class="design__item mix class-d" style="background-image: url('images/design/d5.webp');">
               <div class="design__text">
                 <h2 class="design__item-title">Rattan Rocking</h2>
                 <h3 class="design__item-text">Chair</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-d" style="background-image: url('images/design/d6.jpg');">
+            <div class="design__item mix class-d" style="background-image: url('images/design/d6.webp');">
               <div class="design__text">
                 <h2 class="design__item-title">Lampe Sur Pieds </h2>
                 <h3 class="design__item-text">Bamboo</h3>
@@ -502,7 +524,7 @@
           </div>
         </div>
         <div class="design__video">
-          <div class="design__video__popup" style="background-image: url('images/design/d7.jpg');">
+          <div class="design__video__popup" style="background-image: url('images/design/d7.webp');">
             <a class="design__video__play" data-fancybox href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
               <img src="images/icons/play-btn.svg" alt="video play button">
             </a>
@@ -519,7 +541,7 @@
         <div class="blog__items">
           <div class="blog__item">
             <a class="blog__item-img" href="blog-one.html">
-              <img src="images/blog/blog1-30.jpg" alt="blog images">
+              <img src="images/blog/blog1-30.webp" alt="blog images">
             </a>
             <button class="blog__item-btn">NEWS</button>
             <div class="blog__item-box">
@@ -539,7 +561,7 @@
           </div>
           <div class="blog__item">
             <a class="blog__item-img" href="blog-one.html">
-              <img src="images/blog/blog2-30.jpg" alt="blog images">
+              <img src="images/blog/blog2-30.webp" alt="blog images">
             </a>
             <button class="blog__item-btn">NEWS</button>
             <div class="blog__item-box">
@@ -559,7 +581,7 @@
           </div>
           <div class="blog__item">
             <a class="blog__item-img" href="blog-one.html">
-              <img src="images/blog/blog3-30.jpg" alt="blog images">
+              <img src="images/blog/blog3-30.webp" alt="blog images">
             </a>
             <button class="blog__item-btn">NEWS</button>
             <div class="blog__item-box">
