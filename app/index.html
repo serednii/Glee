@@ -2,15 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Описание проекта">
   <title>Glee</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.min.css" />
+    rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="application-name" content="Главная страница — Описание проекта">
+  <meta name="apple-mobile-web-app-title" content="Главная страница — Описание проекта">
+  <meta property="og:title" content="Главная страница — Описание проекта">
+  <meta property="og:locale" content="en">
+  <meta property="og:description" content="Описание проекта">
+  <meta property="og:url" content="http://localhost:3000">
+  <meta property="og:site_name" content="Описание проекта">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://localhost:3000/img/cover.jpg">
 </head>
 
 <body>
@@ -48,17 +58,17 @@
             <img class="user-nav__link-img" src="images/header/icons/search.svg" alt="search icon">
           </a>
           <div class="user-nav__inner">
-            <a class="user-nav__inner-link">
+            <a href="#" class="user-nav__inner-link">
               <img class="user-nav__link-img" src="images/header/icons/heart.svg" alt="heart icon">
               <span class="user-nav__num">0</span>
             </a>
-            <a class="user-nav__inner-link">
+            <a href="#" class="user-nav__inner-link">
               <img class="user-nav__link-img" src="images/header/icons/cart.svg" alt="cart icon">
               <span class="user-nav__num">0</span>
             </a>
           </div>
-          <a class="user-nav__link user-nav__link--user" href="#">
-            <img class="user-nav__link-img--user" src="images/header/icons/user.svg" alt="user icon">
+          <a class="user-nav__link user-nav__link-user" href="#">
+            <img class="user-nav__link-img-user" src="images/header/icons/user.svg" alt="user icon">
           </a>
         </div>
       </div>
@@ -67,57 +77,70 @@
   <main class="main">
    <section class="top-slider">
       <div class="container top-slider__container">
+        <h1 class="hidden">Glee</h1>
         <div class="top-slider__inner">
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <h3 class="top-slider__title">
+              <h2 class="top-slider__title">
                 SMART AND <br>
                 TRENDY
-              </h3>
+              </h2>
               <p class="top-slider__text">
                 Dolor sit amet, consectetur adipisicing elit, 
                 sed do eiusmod tempor incididunt 
               </p>
               <a class="top-slider__link button" href="shop_1.html">
                 Shop Now
-                <img  class="top-slider__arrow" src="images/Shape 1.svg" alt="button arrow">
+                <img  class="top-slider__arrow" src="images/Shape1.svg" alt="button arrow">
               </a>
             </div>
-            <img class="top-slider__img" src="images/slider/1.png" alt="slider images">
+            <picture>
+              <source srcset="./images/slider/1.webp" type="image/webp">
+              <source srcset="./images/slider/1.avif" type="image/avif">
+              <img class="top-slider__img" src="images/slider/1.png"  alt="slider images">
+            </picture>
           </div>
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <h3 class="top-slider__title">
+              <h2 class="top-slider__title">
                 SMART AND <br>
                 TRENDY
-              </h3>
+              </h2>
               <p class="top-slider__text">
                 Dolor sit amet, consectetur adipisicing elit, 
                 sed do eiusmod tempor incididunt 
               </p>
               <a class="top-slider__link button" href="shop_1.html">
                 Shop Now
-                <img  class="top-slider__arrow" src="images/Shape 1.svg" alt="button arrow">
+                <img  class="top-slider__arrow" src="images/Shape1.svg" alt="button arrow">
               </a>
             </div>
-            <img class="top-slider__img" src="images/slider/2.png" alt="slider images">
+            <picture>
+              <source srcset="./images/slider/2.webp" type="image/webp">
+              <source srcset="./images/slider/2.avif" type="image/avif">
+              <img class="top-slider__img" src="images/slider/2.png"  alt="slider images">
+            </picture>
           </div>
           <div class="top-slider__item">
             <div class="top-slider__content">
-              <h3 class="top-slider__title">
+              <h2 class="top-slider__title">
                 SMART AND <br>
                 TRENDY
-              </h3>
+              </h2>
               <p class="top-slider__text">
                 Dolor sit amet, consectetur adipisicing elit, 
                 sed do eiusmod tempor incididunt 
               </p>
               <a class="top-slider__link button" href="shop_1.html">
                 Shop Now
-                <img  class="top-slider__arrow" src="images/Shape 1.svg" alt="button arrow">
+                <img  class="top-slider__arrow" src="images/Shape1.svg" alt="button arrow">
               </a>
             </div>
-            <img class="top-slider__img" src="images/slider/3.png" alt="slider images">
+            <picture>
+              <source srcset="./images/slider/3.webp" type="image/webp">
+              <source srcset="./images/slider/3.avif" type="image/avif">
+              <img class="top-slider__img" src="images/slider/3.png"  alt="slider images">
+            </picture>
           </div>
         </div>
       </div>
@@ -128,7 +151,7 @@
           <div class="info">
             <div class="info__item-wrap">
               <div class="info__item info__item-sup">
-                <h5 class="info__item-title">Support 24/7.</h5>
+                <h3 class="info__item-title">Support 24/7.</h3>
                 <p class="info__item-text">
                     Contact us 24 hours a day,
                   7 days a week.
@@ -137,7 +160,7 @@
             </div>
             <div class="info__item-wrap">
             <div class="info__item info__item-del">
-              <h5 class="info__item-title">Delivery.</h5>
+              <h3 class="info__item-title">Delivery.</h3>
               <p class="info__item-text">
                 Free shipping on all US order.
               </p>
@@ -145,7 +168,7 @@
           </div>
             <div class="info__item-wrap">
             <div class="info__item info__item-pay">
-              <h5 class="info__item-title">100% Payment secure.</h5>
+              <h3 class="info__item-title">100% Payment secure.</h3>
               <p class="info__item-text">
                 We ensure secure payment
                 with PEV.
@@ -166,13 +189,13 @@
           </div>
           <div class="container1170">
             <div class="categories__content">
-              <div class="categories__item mix category-a">
+              <div class="categories-item mix category-a">
                 <a href="product.html">
-                  <img class="categories__item-img" src="images/product/chair-1.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-1.webp" alt="chair images">
                 </a>
-                <a class="categories__item-title" href="#">Wooden radio</a>
-                <span class="categories__item-prise">$29.00</span>  
-                <div class="categories__item-hover--links">
+                <a class="categories-item-title" href="#">Wooden radio</a>
+                <span class="categories-item-prise">$29.00</span>  
+                <div class="categories-item-hover-links">
                   <button>
                     <svg width="22px" height="18px">
                    <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
@@ -192,13 +215,13 @@
                   </button>
                 </div>            
               </div>
-              <div class="categories__item mix category-a">
+              <div class="categories-item mix category-a">
                 <a href="product.html">
-                  <img class="categories__item-img" src="images/product/chair-2.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-2.webp" alt="chair images">
                 </a>
-                <a class="categories__item-title" href="#">Wooden chair</a>
-                <span class="categories__item-prise">$29.00</span>  
-                <div class="categories__item-hover--links">
+                <a class="categories-item-title" href="#">Wooden chair</a>
+                <span class="categories-item-prise">$29.00</span>  
+                <div class="categories-item-hover-links">
                   <button>
                     <svg width="22px" height="18px">
                    <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
@@ -218,13 +241,13 @@
                   </button>
                 </div>                     
               </div>
-              <div class="categories__item mix category-b">
+              <div class="categories-item mix category-b">
                 <a href="product.html">
-                  <img class="categories__item-img" src="images/product/chair-3.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-3.webp" alt="chair images">
                 </a>
-                <a class="categories__item-title" href="#">White chair</a>
-                <span class="categories__item-prise">$29.00</span>  
-                <div class="categories__item-hover--links">
+                <a class="categories-item-title" href="#">White chair</a>
+                <span class="categories-item-prise">$29.00</span>  
+                <div class="categories-item-hover-links">
                   <button>
                     <svg width="22px" height="18px">
                    <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
@@ -244,13 +267,13 @@
                   </button>
                 </div>                     
               </div>
-              <div class="categories__item mix category-b">
+              <div class="categories-item mix category-b">
                 <a href="product.html">
-                  <img class="categories__item-img" src="images/product/chair-4.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-4.webp" alt="chair images">
                 </a>
-                <a class="categories__item-title" href="#">Retro table</a>
-                <span class="categories__item-prise">$29.00</span>  
-                <div class="categories__item-hover--links">
+                <a class="categories-item-title" href="#">Retro table</a>
+                <span class="categories-item-prise">$29.00</span>  
+                <div class="categories-item-hover-links">
                   <button>
                     <svg width="22px" height="18px">
                    <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
@@ -270,13 +293,13 @@
                   </button>
                 </div>                     
               </div>
-              <div class="categories__item mix category-c">
+              <div class="categories-item mix category-c">
                 <a href="product.html">
-                  <img class="categories__item-img" src="images/product/chair-5.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-5.webp" alt="chair images">
                 </a>
-                <a class="categories__item-title" href="#">Wooden radio</a>
-                <span class="categories__item-prise">$29.00</span>  
-                <div class="categories__item-hover--links">
+                <a class="categories-item-title" href="#">Wooden radio</a>
+                <span class="categories-item-prise">$29.00</span>  
+                <div class="categories-item-hover-links">
                   <button>
                     <svg width="22px" height="18px">
                    <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
@@ -296,13 +319,13 @@
                   </button>
                 </div>                     
               </div>
-              <div class="categories__item mix category-c">
+              <div class="categories-item mix category-c">
                 <a href="product.html">
-                  <img class="categories__item-img" src="images/product/chair-6.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-6.webp" alt="chair images">
                 </a>
-                <a class="categories__item-title" href="#">Wooden chair</a>
-                <span class="categories__item-prise">$29.00</span> 
-                <div class="categories__item-hover--links">
+                <a class="categories-item-title" href="#">Wooden chair</a>
+                <span class="categories-item-prise">$29.00</span> 
+                <div class="categories-item-hover-links">
                   <button>
                     <svg width="22px" height="18px">
                    <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
@@ -322,13 +345,13 @@
                   </button>
                 </div>                      
               </div>
-              <div class="categories__item mix category-d">
+              <div class="categories-item mix category-d">
                 <a href="product.html">
-                  <img class="categories__item-img" src="images/product/chair-7.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-7.webp" alt="chair images">
                 </a>
-                <a class="categories__item-title" href="#">White chair</a>
-                <span class="categories__item-prise">$29.00</span> 
-                <div class="categories__item-hover--links">
+                <a class="categories-item-title" href="#">White chair</a>
+                <span class="categories-item-prise">$29.00</span> 
+                <div class="categories-item-hover-links">
                   <button>
                     <svg width="22px" height="18px">
                    <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
@@ -348,13 +371,13 @@
                   </button>
                 </div>                      
               </div>
-              <div class="categories__item mix category-d">
+              <div class="categories-item mix category-d">
                 <a href="product.html">
-                  <img class="categories__item-img" src="images/product/chair-8.jpg" alt="chair images">
+                  <img class="categories-item-img" src="images/product/chair-8.webp" alt="chair images">
                 </a>
-                <a class="categories__item-title" href="#">Retro table</a>
-                <span class="categories__item-prise">$29.00</span> 
-                <div class="categories__item-hover--links">
+                <a class="categories-item-title" href="#">Retro table</a>
+                <span class="categories-item-prise">$29.00</span> 
+                <div class="categories-item-hover-links">
                   <button>
                     <svg width="22px" height="18px">
                    <path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
@@ -386,11 +409,11 @@
         <div class="blurb__inner">
           <div class="blurb__items">
             <div class="blurb__item">
-              <img class="blurb__item-img" src="images/product/lamp-left.png" alt="blurb images">
+              <img class="blurb__item-img" src="images/product/lamp-left.webp" alt="blurb images">
               <div class="blurb__item-content">
-              <h4 class="blurb__item-title">
+              <h2 class="blurb__item-title">
                 Mirum Notare Tellus
-              </h4>
+              </h2>
               <p class="blurb__item-text">
                 LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 <br>
                  E27LEDCornLight
@@ -412,11 +435,11 @@
             </div>
             </div>
             <div class="blurb__item">
-              <img class="blurb__item-img" src="images/product/lamp-right.png" alt="blurb images">
+              <img class="blurb__item-img" src="images/product/lamp-right.webp" alt="blurb images">
               <div class="blurb__item-content">
-              <h4 class="blurb__item-title">
+              <h2 class="blurb__item-title">
                 Malesuada Tempor Euismod
-              </h4>
+              </h2>
               <p class="blurb__item-text">
                 50W 8000lm Compact Size for HID <br>
                  StreetLightReplacementLEDCornLight
@@ -445,7 +468,7 @@
      <section class="design"  data-ref="container-2">
       <div class="container">
         <div class="design__top">
-          <h3 class="title">New Design</h3>
+          <h2 class="title">New Design</h2>
           <div class="design__filter-btn">
             <button class="design-btn" data-filter="all">All</button>
             <button class="design-btn" data-filter=".class-a">Furnitures</button>
@@ -456,68 +479,69 @@
         </div>
         <div class="container1170">
           <div class="design__content">
-            <div class="design__item mix class-a" style="background-image: url('images/design/d1.jpg');">
+            <div class="design__item mix class-a" style="background-image: url('images/design/d1.webp');">
               <div class="design__text">
-                <h4 class="design__item-title">Beat Flat Pendant</h4>
-                <h5 class="design__item-text">Black</h5>
+                <h2 class="design__item-title">Beat Flat Pendant</h2>
+                <h3 class="design__item-text">Black</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-a" style="background-image: url('images/design/d2.jpg');">
+            <div class="design__item mix class-a" style="background-image: url('images/design/d2.webp');">
               <div class="design__text">
-                <h4 class="design__item-title">Lampe Sur Pieds</h4>
-                <h5 class="design__item-text">Bamboo</h5>
+                <h2 class="design__item-title">Lampe Sur Pieds</h2>
+                <h3 class="design__item-text">Bamboo</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-b" style="background-image: url('images/design/d3.jpg');">
+            <div class="design__item mix class-b" style="background-image: url('images/design/d3.webp');">
               <div class="design__text">
-                <h4 class="design__item-title">Rattan Rocking</h4>
-                <h5 class="design__item-text">Chair</h5>
+                <h2 class="design__item-title">Rattan Rocking</h2>
+                <h3 class="design__item-text">Chair</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-c" style="background-image: url('images/design/d4.jpg');">
+            <div class="design__item mix class-c" style="background-image: url('images/design/d4.webp');">
               <div class="design__text">
-                <h4 class="design__item-title">Rattan Rocking</h4>
-                <h5 class="design__item-text">Chair</h5>
+                <h2 class="design__item-title">Rattan Rocking</h2>
+                <h3 class="design__item-text">Chair</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-d" style="background-image: url('images/design/d5.jpg');">
+            <div class="design__item mix class-d" style="background-image: url('images/design/d5.webp');">
               <div class="design__text">
-                <h4 class="design__item-title">Rattan Rocking</h4>
-                <h5 class="design__item-text">Chair</h5>
+                <h2 class="design__item-title">Rattan Rocking</h2>
+                <h3 class="design__item-text">Chair</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
-            <div class="design__item mix class-d" style="background-image: url('images/design/d6.jpg');">
+            <div class="design__item mix class-d" style="background-image: url('images/design/d6.webp');">
               <div class="design__text">
-                <h4 class="design__item-title">Lampe Sur Pieds </h4>
-                <h5 class="design__item-text">Bamboo</h5>
+                <h2 class="design__item-title">Lampe Sur Pieds </h2>
+                <h3 class="design__item-text">Bamboo</h3>
                 <p class="design__item-type">Classic</p>
               </div>
             </div>
           </div>
         </div>
         <div class="design__video">
-          <div class="design__video__popup" style="background-image: url('images/design/d7.jpg');">
+          <div class="design__video__popup" style="background-image: url('images/design/d7.webp');">
             <a class="design__video__play" data-fancybox href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
               <img src="images/icons/play-btn.svg" alt="video play button">
             </a>
         </div>
       </div>
+    </div>
     </section> 
    <section class="blog">
       <div class="container1170">
         <div class="blog__top">
-          <h3 class="title">Our Insights & Articles</h3>
+          <h2 class="title">Our Insights & Articles</h2>
           <a class="blog__top-link" href="#">View All</a>
         </div>
         <div class="blog__items">
           <div class="blog__item">
             <a class="blog__item-img" href="blog-one.html">
-              <img src="images/blog/blog1-30.jpg" alt="blog images">
+              <img src="images/blog/blog1-30.webp" alt="blog images">
             </a>
             <button class="blog__item-btn">NEWS</button>
             <div class="blog__item-box">
@@ -537,7 +561,7 @@
           </div>
           <div class="blog__item">
             <a class="blog__item-img" href="blog-one.html">
-              <img src="images/blog/blog2-30.jpg" alt="blog images">
+              <img src="images/blog/blog2-30.webp" alt="blog images">
             </a>
             <button class="blog__item-btn">NEWS</button>
             <div class="blog__item-box">
@@ -557,7 +581,7 @@
           </div>
           <div class="blog__item">
             <a class="blog__item-img" href="blog-one.html">
-              <img src="images/blog/blog3-30.jpg" alt="blog images">
+              <img src="images/blog/blog3-30.webp" alt="blog images">
             </a>
             <button class="blog__item-btn">NEWS</button>
             <div class="blog__item-box">
@@ -613,7 +637,7 @@
           <a class="footer-top__email" href="mailto:contact@Glee.com">contact@Glee.com</a>
         </div>
         <div class="footer-top__item footer-top__nav">
-          <h6 class="footer-top__title">Services</h6>
+          <h3 class="footer-top__title">Services</h3>
           <ul class="footer-top__list">
             <li class="footer-top__item">
               <a class="footer-top__link" href="about.html">About us</a>
@@ -634,7 +658,7 @@
         </div>
 
         <div class="footer-top__item footer-top__nav">
-          <h6 class="footer-top__title">Account</h6>
+          <h3 class="footer-top__title">Account</h3>
           <ul class="footer-top__list">
             <li class="footer-top__item">
               <a class="footer-top__link" href="#">Your Account</a>
@@ -651,7 +675,7 @@
           </ul>
         </div>
         <div class="footer-top__item footer-top__item-form">
-          <h6 class="footer-top__title">newsletter</h6>
+          <h3 class="footer-top__title">newsletter</h3>
           <p class="footer-top__text">
             Subscribe by our newsletter and get
             update protidin.
@@ -670,15 +694,15 @@
           <li class="footer-buttom__page-list">
             <a class="footer-buttom__page-link" href="index.html">Home</a>  
           </li>
-          <span></span>
+      
           <li class="footer-buttom__page-list">
             <a class="footer-buttom__page-link" href="about.html">About</a>  
           </li>
-          <span></span>      
+          
           <li class="footer-buttom__page-list">
             <a class="footer-buttom__page-link" href="blog.html">Blog</a>
           </li> 
-          <span></span>
+        
           <li class="footer-buttom__page-list">
             <a class="footer-buttom__page-link" href="contact.html">Contact</a>
           </li>
