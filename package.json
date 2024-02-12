@@ -1,5 +1,5 @@
 {
-  "name": "s",
+  "name": "glee",
   "version": "1.0.0",
   "homepage": "https://github.com/eliofery/glee",
   "main": "gulpfile.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d app"
   },
-  "author": "serednii mykola",
+  "author": "serednia anastasia",
   "license": "ISC",
 
   "devDependencies": {

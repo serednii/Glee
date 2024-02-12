@@ -7,10 +7,10 @@ $(function () {
         autoplaySpeed: 2000
       });
 
-      $('.menu__btn').on('click', function () {
-        $('.menu__list').toggleClass('menu__list--active');
-        $('.menu__btn').toggleClass('menu__btn--active');
-      });
+      // $('.menu__btn').on('click', function () {
+      //   $('.menu__list').toggleClass('menu__list--active');
+      //   $('.menu__btn').toggleClass('menu__btn--active');
+      // });
 
       $('.shop__filter-btn').on('click', function (){
         $('.shop__filters').slideToggle();

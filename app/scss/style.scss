@@ -3,15 +3,16 @@
 @import 'fonts';
 @import 'libs';
 @import 'global';
+@import 'burger';
 .hidden {
     visibility: hidden;
 }
 .header{
-    padding: 40px 0;
+   margin-bottom: 20px;
     &__inner{
         display: flex;
         justify-content: space-between;
-        align-items: conter;
+        align-items: center;
         flex-wrap: wrap;
     }
 }
@@ -88,11 +89,15 @@
 
    &__link{
    position: relative;
+   transition: all .3s;
+   &:hover{
+      
+   }
    &:focus{
-    border-color: #f9fafb;
-    box-shadow: 0 0 0 0.25rem rgba(211,212,213,.5);
-    outline: 0;
-    border-radius: 50%;
+        border-color: #f9fafb;
+        box-shadow: 0 0 0 0.25rem rgba(211,212,213,.5);
+        outline: 0;
+        border-radius: 50%;
 }
    } 
 
@@ -307,26 +312,33 @@
         font-size: 72px;
         line-height: 1.2;
         @extend %rubik-500;
-        margin-bottom: 46px;
+        margin-bottom: 15px;
     }
     &__text{
+        @extend %rubik-400;
+        font-size: 18px;
+        color: $title;
+        line-height: 1.5;
         max-width: 360px;
         margin-bottom: 43px;
     }
     &__link{
         @extend %btn;
-        display: inline-block;
+        display: flex;
         line-height: 60px;
         width: 200px;
         height: 60px;
         padding-left: 25px;
-        justify-content: center;
         position: relative;
         margin-left: 0;
+        transition: all .3s;
         &:focus{
             border-color: #565e64;
             outline: 0;
             box-shadow: 0 0 0 0.25rem rgba(130,138,145,.5);
+        }
+        &:hover{
+            background-color: #243f4d;
         }
     }
     &__arrow{
@@ -344,7 +356,7 @@
     .slick-dots{
         display: flex;
         justify-content: center;
-        margin-top: -45px;
+        margin-top: 40px;
         li{
             margin: 0 5px;
             line-height: 0;
@@ -426,19 +438,31 @@
         margin-bottom: 83px;
     }
 
+    &__title{
+        margin-bottom: 15px;
+    }
+
     &__filter-btn{
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
     &__btn{
         border: none;
         background-color: transparent;
         cursor: pointer;
         color: #8b8b8b;
+        transition: all .3s;
         &:focus{
             border-color: #f9fafb;
             box-shadow: 0 0 0 0.25rem rgba(211,212,213,.5);
             outline: 0;
             border-radius: 10px;
+        }
+        &:hover{
+            color: #a3bbc8;
+            border-bottom-color: #a3bbc8;
         }
     }
 
@@ -447,7 +471,8 @@
         gap: 20px;
         max-width: 1168px;
         flex-wrap: wrap;
-        margin-bottom: 186px;
+        margin-bottom: 152px;
+        justify-content: center;
     }
     .mixitup-control-active{
         color: #000;
@@ -553,7 +578,7 @@
 }
 
 .blurb{
-    margin-bottom: 105px;
+    margin-bottom: 95px;
     &__items{
         display: flex;
         justify-content: space-between;
@@ -591,7 +616,7 @@
             margin-bottom: 36px;
        }
        &__link{
-            display: inline-block;
+            display: flex;
             line-height: 60px;
             width: 180px;
             height: 58px;
@@ -602,6 +627,12 @@
             cursor: pointer;
             border-radius: 5px;
             color: #436372;
+            background-color: transparent;
+            transition: all .3s;
+            &:hover{
+                background-color: #243f4d;
+                color: $search;
+            }
             &:focus{
                 border-color: #1a1e21;
                 outline: 0;
@@ -627,11 +658,16 @@
 .design{
     margin-bottom: 120px;
     .title{
-        margin-bottom: 37px;
+        margin-bottom: 25px;
+    }
+    &__top{
+        margin-bottom: 80px;
+
     }
     &__filter-btn{
-        text-align: center;
-        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        gap: 19px;
     }
     &-btn{
         border: none;
@@ -643,7 +679,11 @@
             border-color: #f9fafb;
             box-shadow: 0 0 0 0.25rem rgba(211,212,213,.5);
             outline: 0;
-            border-radius: 10px;
+            border-radius: 10px;    
+        }
+        &:hover{
+            color: #a3bbc8;
+            border-bottom-color: #a3bbc8;
         }
     }
     &__content{
@@ -663,12 +703,18 @@
     .mixitup-control-active{
         color: #000;
     }
+    &__item-title{
+        @extend %dmsans-700;
+        font-size: 20px;
+        color: #191919;
+    }
     &__text{
-        padding-left: 36px;
-        padding-top: 43px;
+        padding-left: 46px;
+        padding-top: 33px;
     }
     &__item-text{
         font-size: 20px;
+        margin-bottom: 8px;
     }
     &__item-type{
         @extend %dmsans-700;
@@ -682,6 +728,8 @@
          height: 500px;
     }
     &__video__play{
+        background-color: transparent;
+        border: none;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -691,6 +739,9 @@
             box-shadow: 0 0 0 0.25rem rgba(211,212,213,.5);
             outline: 0;
             border-radius: 10px;
+        }
+        &:hover + .design__video__popup{
+            background-color: #191919;
         }
     }
 }
@@ -922,6 +973,9 @@
         display: flex;
         justify-content: space-between;
     }
+    &__img{
+        max-width: 565px;
+    }
     &__content{
         margin-left: 50px;
     }
@@ -1152,11 +1206,11 @@
     }
 }
 .filter{
-    &-item{
+    &__item{
         margin-bottom: 70px;
     }
    
-    &-title-text{
+    &__title-text{
         position: relative;
         display: inline-block;
         text-transform: uppercase;
@@ -1166,7 +1220,7 @@
         margin-bottom: 30px;
         margin-right: 17px;
     }
-    &-title-line{
+    &__title-line{
         position: absolute;
         display: inline-block;
         height: 3px;
@@ -1369,7 +1423,7 @@
         color: #243f4d;
         margin-bottom: 37px;
     }
-    .shop-content__item-links{
+    .shop-content-item-links{
         display: flex;
         button{
             background-color: #fff;
@@ -1392,7 +1446,7 @@
         }
     }
 
-    .shop-content__item-links{
+    .shop-content-item-links{
         button:hover{
           background-color: #a3bbc8;
         svg{
@@ -2233,13 +2287,17 @@
 
 .map {
     width: 100%;
-    height: 335px;
     aspect-ratio: 16 / 9;
 
-    .ymaps-2-1-79-map {
-        max-width: 348px !important;
-        aspect-ratio: 16 / 9 !important;
+    iframe{
+        width: 100%;
+        height: 100%;
     }
+
+    // .ymaps-2-1-79-map {
+    //     max-width: 480px !important;
+    //     aspect-ratio: 16 / 9 !important;
+    // }
 }
 
 
@@ -2316,6 +2374,7 @@
         }
     }
 }
+
 
 
 @import 'media__header';

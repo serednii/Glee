@@ -22,41 +22,8 @@ function init() {
               iconImageSize: [33, 48],
               iconImageOffset: [-17, -48]
   });
-// // second marker
-//   var placemark1 = new ymaps.Placemark([48.98694094390437, 14.49513151610883],{   
-//     hintContent:'<div class="map__hint">This is hint</div>',
-//     balloonContent:[
-//       '<div class="map__balloon">',
-//       '<img class="map__burger-img" src="../images/burger.png" alt="Бургер"/>',
-//       'Самые вкусные бургеры у нас! Заходите по адресу: Малый проспект В О, д 64',
-//       '</div>'
-//   ]
-//   },
-//   {
-//                iconLayout: 'default#image',
-//               iconImageHref: '../img/location.svg',
-//               iconImageSize: [33, 48],
-//               iconImageOffset: [-17, -48]
-//   });
-// // third marker
-//   var placemark2 = new ymaps.Placemark([48.93694094390437, 14.46513151610883],{   
-//     hintContent:'<div class="map__hint">This is hint</div>',
-//     balloonContent:[
-//       '<div class="map__balloon">',
-//       '<img class="map__burger-img" src="../images/burger.png" alt="Бургер"/>',
-//       'Самые вкусные бургеры у нас! Заходите по адресу: Малый проспект В О, д 64',
-//       '</div>'
-//   ]
-//   },
-//   {
-//                iconLayout: 'default#image',
-//               iconImageHref: '../img/location.svg',
-//               iconImageSize: [33, 48],
-//               iconImageOffset: [-17, -48]
-//   });
 
 
   map.geoObjects.add(placemark);
-//   map.geoObjects.add(placemark1);
-//   map.geoObjects.add(placemark2);
+
 }

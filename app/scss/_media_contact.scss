@@ -1,4 +1,4 @@
-@media(max-width: 1050px){
+@media(max-width: 1200px){
    .contact{
         &__info-list{
             display: block;
@@ -33,6 +33,12 @@
             margin-bottom: 30px;
         }
    }
+}
+
+@media(max-width: 840px){
+    .contact-form-map{
+        flex-wrap: wrap;
+    }
 }
 
 @media(max-width: 450px){
