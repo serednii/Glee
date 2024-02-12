@@ -506,18 +506,19 @@
     </section> 
     
      <section class="design"  data-ref="container-2">
-      <div class="container">
-        <div class="design__top">
-          <h2 class="title">New Design</h2>
-          <div class="design__filter-btn">
-            <button class="design-btn" data-filter="all">All</button>
-            <button class="design-btn" data-filter=".class-a">Furnitures</button>
-            <button class="design-btn" data-filter=".class-b">Chairs</button>
-            <button class="design-btn" data-filter=".class-c">Lighting</button>
-            <button class="design-btn" data-filter=".class-d">Decor</button>
-          </div>
-        </div>
+      
+    
         <div class="container1170">
+          <div class="design__top">
+            <h2 class="title">New Design</h2>
+            <div class="design__filter-btn">
+              <button class="design-btn" data-filter="all">All</button>
+              <button class="design-btn" data-filter=".class-a">Furnitures</button>
+              <button class="design-btn" data-filter=".class-b">Chairs</button>
+              <button class="design-btn" data-filter=".class-c">Lighting</button>
+              <button class="design-btn" data-filter=".class-d">Decor</button>
+            </div>
+          </div>
           <ul class="design__content">
             <li class="design__item mix class-a" style="background-image: url('images/design/d1.webp');">
               <div class="design__text">
@@ -565,12 +566,12 @@
         </div>
         <div class="design__video">
           <div class="design__video__popup" style="background-image: url('images/design/d7.webp');">
-            <button class="design__video__play" data-fancybox href="https://www.youtube.com/watch?v=MoN9ql6Yymw">
+            <button class="design__video__play" data-fancybox href="https://www.youtube.com/watch?v=MoN9ql6Yymw" aria-label="Play video" role="button">
               <img src="images/icons/play-btn.svg" alt="video play button">
             </button>
         </div>
       </div>
-    </div>
+    
     </section> 
    <section class="blog">
       <div class="container1170">
@@ -586,8 +587,9 @@
                 <source srcset="images/blog/blog1-30.avif" type="image/avif">
                 <img src="images/blog/blog1-30.jpg" alt="blog images">
               </picture>
+              <button class="blog__item-btn">NEWS</button>
             </a>
-            <button class="blog__item-btn">NEWS</button>
+            
             <div class="blog__item-box">
               <a class="blog__item-title" href="blog-one.html">
                   Diusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -610,8 +612,9 @@
                 <source srcset="images/blog/blog2-30.avif" type="image/avif">
                 <img src="images/blog/blog2-30.webp" alt="blog images">
               </picture>
+              <button class="blog__item-btn">NEWS</button>
             </a>
-            <button class="blog__item-btn">NEWS</button>
+            
             <div class="blog__item-box">
               <a class="blog__item-title" href="blog-one.html">
                   Aonsectetur adipisicing elit, 
@@ -634,8 +637,9 @@
                 <source srcset="images/blog/blog3-30.avif" type="image/avif">
                 <img src="images/blog/blog3-30.jpg" alt="blog images">
               </picture>
+              <button class="blog__item-btn">NEWS</button>
             </a>
-            <button class="blog__item-btn">NEWS</button>
+           
             <div class="blog__item-box">
               <a class="blog__item-title" href="blog-one.html">
                   Rncididunt ut labore et dolore magna aliqua. Ut enim 
@@ -732,10 +736,20 @@
             Subscribe by our newsletter and get
             update protidin.
           </p>
-          <form class="footer-top__form" action="#" >
+          <!-- <form class="footer-top__form" action="#" >
             <input class="footer-top__form-input" type="email" placeholder="Email address" required>
             <button class="footer-top__form-btn" type="submit">Subscribe</button>
+          </form> -->
+
+          <form class="footer-top__form send-form-newsletter" action="#">
+            <input type="hidden" name="project_name" value="marcho">
+            <input type="hidden" name="admin_email" value="anastasiaseredna@gmail.com">
+            <input type="hidden" name="form_subject" value="Marcho">
+            <input class="footer-top__form-input" value="" name="email" type="email"
+              placeholder="Your email address" required>
+            <button class="footer-top__form-btn" type="submit">Subscribe</button>
           </form>
+
         </div>
       </div>
       <div class="footer-buttom">
