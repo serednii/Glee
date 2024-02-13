@@ -1,7 +1,7 @@
 .top-slider {
     &__inner {
         width: 100%;
-        aspect-ratio: 1/0.47;
+        aspect-ratio: 1/0.465;
         background-color: $default;
         // background-image: url("../images/slider/fon1.png");
         // background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     }
 
     &__item {
-        height: 100%;
+        aspect-ratio: 1/.454;
         display: grid !important;
         grid-template-columns: auto 53%;
     }
@@ -66,7 +66,7 @@
 
     &__arrow {
         position: absolute;
-        right: 36px;
+        right: 23px;
         top: 24px;
     }
 
@@ -81,17 +81,18 @@
 
     &__img {
         width: 69%;
-        // height: 262px;
-
     }
 
     .slick-dots {
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        transform: translateX(-50%);
 
         li {
-            margin: 0 5px;
+            margin: 0 7px;
             line-height: 0;
 
             button {

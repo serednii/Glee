@@ -1,10 +1,10 @@
 $(function () {
 
-  $('.top-slider__inner1').slick({
+  $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
     fade: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000
   });
 
