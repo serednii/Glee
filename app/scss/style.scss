@@ -227,9 +227,13 @@
         }
 
         &__link {
-            margin-bottom: 20px;
             display: inline-block;
-
+            line-height: 1.7;
+            margin-bottom: 17px;
+            transition: all 5s;
+            &:hover{
+               text-decoration-line: underline;
+            }
             &:focus {
                 background-color: #f9fafb;
                 border-color: #f9fafb;
@@ -863,7 +867,7 @@
         margin-right: 20px;
         height: min-content;
         padding: 3px;
-
+      
         &:focus {
             border-color: #f9fafb;
             box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
