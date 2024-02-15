@@ -64,6 +64,8 @@
         }
 
         &__title {
+            border: transparent;
+            background-color: transparent;
             color: #1f2044;
             text-transform: uppercase;
             @extend %dmsans-700;
@@ -160,28 +162,29 @@
         .footer-top {
             flex-wrap: wrap;
 
+            &__item {
+                text-align: center;
+                margin-top: 15px;
+            }
+
             &__item-form {
                 max-width: 100%;
-                margin-top: 30px;
             }
         }
 
     }
 }
 
-@media(max-width: 860px) {
+@media(max-width: 768px) {
     .footer {
         .footer-top {
             &__contact {
                 margin-right: 0;
-                margin-bottom: 30px;
             }
         }
 
     }
-}
 
-@media(max-width: 620px) {
     .footer {
         .footer-top {
             justify-content: center;
@@ -198,11 +201,22 @@
     }
 }
 
+@media(max-width: 620px) {}
+
 @media(max-width: 450px) {
     .footer {
         .footer-top {
-            &__nav {
-                margin-top: 30px;
+            flex-direction: column;
+            align-items: center;
+
+
+            &__title {
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+
+            &__list {
+                display: none;
             }
 
             &__form {

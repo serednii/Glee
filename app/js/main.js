@@ -12,15 +12,54 @@ $(function () {
   //   $('.menu__list').toggleClass('menu__list--active');
   //   $('.menu__btn').toggleClass('menu__btn--active');
   // });
+  //--------------------------------------------------------
 
   $('.shop__filter-btn').on('click', function () {
     $('.shop__filters').slideToggle();
   });
+  //--------------------------------------------------------
 
-  $('.footer-top__title').on('click', function () {
-    $(this).next().slideToggle();
-    $(this).toggleClass('active');
+
+
+  //--------------------------------------------------------
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      $('.footer-top__list, .footer-top__text').attr("style", "display:none");
+      $('.footer-top__title').attr('aria-label', 'Відкрити меню');
+
+
+      //тільки при меншому екрані за 450px включати виключати меню
+      $('.footer-top__title').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('active');
+        // Переключение атрибута "disabled" элемента с id="myButton"
+        $(this).attr('aria-label', function (_, attr) {
+          return attr === 'Відкрити меню' ? 'Закрити меню' : 'Відкрити меню';
+        });
+
+      });
+
+    } else {
+      $('.footer-top__list, .footer-top__text').attr("style", "display:block");
+      $('.footer-top__title').removeAttr('aria-label');
+      $('.footer-top__title').off('click');//Видаляємо оброботчик подій
+
+
+    }
+  }
+
+  // Create a MediaQueryList object
+  var x = window.matchMedia("(max-width: 450px)")
+
+  // Call listener function at run time
+  myFunction(x);
+
+  // Attach listener function on state changes
+  x.addEventListener("change", function () {
+    myFunction(x);
   });
+  //--------------------------------------------------------
+
 
   $('.filter-price__input').ionRangeSlider({
     type: "double",
