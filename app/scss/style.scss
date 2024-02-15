@@ -1,14 +1,8 @@
-@import "reset";
-@import "vars";
-@import "fonts";
-@import "libs";
-@import "global";
-@import "burger";
-
 .hidden {
     visibility: hidden;
 }
 
+<<<<<<< HEAD
 .header {
     margin-bottom: 20px;
 
@@ -313,6 +307,8 @@
     }
 }
 
+=======
+>>>>>>> a6ab301a9b3a578590b0265191b4d01fe42657d6
 .top {
     background-color: #edf1f4;
     margin-bottom: 120px;
@@ -329,67 +325,28 @@
     }
 }
 
-.top-slider {
-    &__inner {
-        height: 818px;
-        background-color: $default;
-        background-image: url("../images/slider/fon1.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 65px 0 45px;
-    }
+@import "reset";
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "global";
+@import "burger";
 
-    &__content {
-        padding-top: 135px;
-        padding-left: 305px;
-        padding-bottom: 150px;
-    }
 
-    &__item {
-        display: flex !important;
-        justify-content: space-between;
-    }
+@import "header";
+@import "top-slider";
+@import "categories";
+@import "footer";
 
-    &__title {
-        min-width: 410px;
-        color: #243f4d;
-        font-size: 72px;
-        line-height: 1.2;
-        @extend %rubik-500;
-        margin-bottom: 15px;
-    }
+@import "blurb";
+@import "design";
+@import "blog";
 
-    &__text {
-        @extend %rubik-400;
-        font-size: 18px;
-        color: $title;
-        line-height: 1.5;
-        max-width: 360px;
-        margin-bottom: 43px;
-    }
 
-    &__link {
-        @extend %btn;
-        display: flex;
-        line-height: 60px;
-        width: 200px;
-        height: 60px;
-        padding-left: 25px;
-        position: relative;
-        margin-left: 0;
-        transition: all 0.3s;
 
-        &:focus {
-            border-color: #565e64;
-            outline: 0;
-            box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
-        }
 
-        &:hover {
-            background-color: #243f4d;
-        }
-    }
 
+<<<<<<< HEAD
     &__arrow {
         position: absolute;
         right: 36px;
@@ -1015,6 +972,8 @@
     }
 
 }
+=======
+>>>>>>> a6ab301a9b3a578590b0265191b4d01fe42657d6
 
 .mold {
     max-width: 470px;
@@ -1936,7 +1895,7 @@
 }
 
 .product-tabs__top-item.product-tabs__top-item--active {
-    background-color: $accent !important;
+    background-color: $accent  !important;
     color: #fff !important;
 }
 
@@ -2653,6 +2612,7 @@
         height: 50px;
         padding: 0 20px;
         border: none;
+
         &::placeholder {
             text-transform: uppercase;
         }
@@ -2685,6 +2645,7 @@
         margin-bottom: 30px;
         border: none;
         resize: none;
+
         &::placeholder {
             text-transform: uppercase;
         }
@@ -2719,13 +2680,10 @@
     }
 }
 
-@import "media__header";
-@import "media__footer";
-@import "media__top-slider";
-@import "media__categories";
-@import "media_blurb";
-@import "media_design";
-@import "media_blog";
+
+
+
+
 
 @import "media_login";
 @import "media_blog-page";
