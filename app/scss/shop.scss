@@ -1,0 +1,20 @@
+.shop {
+    padding-bottom: 120px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: minmax(200px, 270px) auto;
+        grid-template-areas:
+            "filters content"
+            "filters pagination";
+    }
+
+    &__filters {
+        margin-right: 30px;
+        grid-area: filters;
+    }
+
+    &__filter-btn {
+        display: none;
+    }
+}

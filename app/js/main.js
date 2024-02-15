@@ -22,19 +22,19 @@ $(function () {
 
 
   //--------------------------------------------------------
-  function myFunction(x) {
+  function mediaQuery(x) {
     if (x.matches) { // If media query matches
       $('.footer-top__list, .footer-top__text').attr("style", "display:none");
-      $('.footer-top__title').attr('aria-label', 'Відкрити меню');
+      $('.footer-top__title').attr('aria-label', 'Open menu');
 
 
-      //тільки при меншому екрані за 450px включати виключати меню
+      //тільки при меншому екрані за 768px включати виключати меню
       $('.footer-top__title').on('click', function () {
         $(this).next().slideToggle();
         $(this).toggleClass('active');
         // Переключение атрибута "disabled" элемента с id="myButton"
         $(this).attr('aria-label', function (_, attr) {
-          return attr === 'Відкрити меню' ? 'Закрити меню' : 'Відкрити меню';
+          return attr === 'Відкрити меню' ? 'Close menu' : 'Відкрити меню';
         });
 
       });
@@ -49,14 +49,14 @@ $(function () {
   }
 
   // Create a MediaQueryList object
-  var x = window.matchMedia("(max-width: 450px)")
+  var x = window.matchMedia("(max-width: 600px)")
 
   // Call listener function at run time
-  myFunction(x);
+  mediaQuery(x);
 
   // Attach listener function on state changes
   x.addEventListener("change", function () {
-    myFunction(x);
+    mediaQuery(x);
   });
   //--------------------------------------------------------
 
@@ -101,7 +101,6 @@ $(function () {
     $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
   });
-
 
   $('.related__items').slick({
     dots: false,

@@ -4,41 +4,45 @@
     .footer-top {
         padding: 70px 0 40px;
         border-bottom: 1px solid #dae4e9;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 300px)) 300px;
         color: $footer;
-        gap: 10%;
         @extend %rubik-400;
-
-        &__item {
-            .logo {
-                margin-bottom: 30px;
-                display: block;
-            }
-        }
 
         a {
             color: inherit;
         }
 
-        &__contact {
-            width: 216px;
-            margin-top: -20px;
-        }
+        &__card {
 
-        &__nav {
-            width: 150px;
-        }
+            .logo {
+                margin-bottom: 30px;
+                display: block;
+            }
 
-        &__item-form {
-            max-width: 270px;
-        }
+            &-contact {
+                width: 216px;
+                margin-top: -20px;
+            }
 
+            &-nav {
+                width: 150px;
+            }
+
+            &-form {
+                max-width: 270px;
+            }
+        }
+    
         &__address,
         &__phone,
         &__email {
             margin-bottom: 25px;
             display: block;
-
+            &::before {
+                text-transform: uppercase;
+                content: "address:";
+            }
             &:focus {
                 background-color: #f9fafb;
                 border-color: #f9fafb;
@@ -48,19 +52,16 @@
             }
         }
 
-        &__address::before {
-            content: "address:";
-            text-transform: uppercase;
-        }
+        // &__address::before {
+        //     content: "address:";
+        // }
 
         &__phone::before {
             content: "telephone:";
-            text-transform: uppercase;
         }
 
         &__email::before {
             content: "email:";
-            text-transform: uppercase;
         }
 
         &__title {
@@ -157,58 +158,51 @@
     }
 }
 
-@media(max-width: 1050px) {
+// @media(max-width: 1050px) {
+//     .footer {
+//         .footer-top {
+       
+//             &__item {
+//                 // text-align: center;
+                
+//                 // margin-top: 15px;
+//                 // max-width: 300px;
+//             }
+
+//             &__item-form {
+
+//             }
+//         }
+
+//     }
+// }
+
+@media(max-width: 900px) {
     .footer {
         .footer-top {
-            flex-wrap: wrap;
-
-            &__item {
-                text-align: center;
-                margin-top: 15px;
-            }
-
-            &__item-form {
-                max-width: 100%;
-            }
+        grid-template-columns: repeat(2, 300px);
+           
+    
         }
+
 
     }
 }
 
-@media(max-width: 768px) {
+
+
+@media(max-width: 600px) {
     .footer {
         .footer-top {
+            grid-template-columns: 100%;
+
+            // &__card {
+            //     justify-self: center;
+            // }
+
             &__contact {
-                margin-right: 0;
+                // margin-right: 0;
             }
-        }
-
-    }
-
-    .footer {
-        .footer-top {
-            justify-content: center;
-        }
-
-        .footer-buttom {
-            justify-content: center;
-
-            &__copy {
-                text-align: center;
-                width: 100%;
-            }
-        }
-    }
-}
-
-@media(max-width: 620px) {}
-
-@media(max-width: 450px) {
-    .footer {
-        .footer-top {
-            flex-direction: column;
-            align-items: center;
-
 
             &__title {
                 cursor: pointer;
@@ -225,18 +219,36 @@
 
             &__form-input {
                 max-width: 100%;
-                margin-right: 0;
             }
 
             &__form-btn {
                 width: 100%;
+                margin-left: 0;
+            }
+
+            .footer-buttom {
+                justify-content: center;
+    
+                &__copy {
+                    text-align: center;
+                    width: 100%;
+                }
             }
         }
 
         .footer-buttom {
+            justify-content: center;
+    
+            &__copy {
+                text-align: center;
+                width: 100%;
+            }
+    
             &__accept-img {
                 margin-left: 15px;
             }
+
         }
     }
 }
+

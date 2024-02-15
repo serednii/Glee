@@ -438,20 +438,23 @@
   </main>
   <footer class="footer">
     <div class="container1170">
-      <div class="footer-top">
-        <div class="footer-top__item footer-top__contact">
-          <a class="logo" href="index.html">
-            <img class="logo__img" src="images/header/icons/logo.svg" alt="logo img">
-          </a>
-          <a class="footer-top__address" href="#">
-            4772 Wines Lane
-            Houston, TX 77032
-          </a>
-          <a class="footer-top__phone" href="tel:8323475843">+832-347-5843</a>
-          <a class="footer-top__email" href="mailto:contact@Glee.com">contact@Glee.com</a>
-        </div>
-        <div class="footer-top__item footer-top__nav">
-          <h3 class="footer-top__title">Services</h3>
+
+      <ul class="footer-top">
+        <li class="footer-top__card footer-top__card-contact">
+          <address>
+            <a class="logo" href="index.html">
+              <img class="logo__img" src="images/header/icons/logo.svg" alt="logo img">
+            </a>
+            <a class="footer-top__address" href="#">
+              4772 Wines Lane
+              Houston, TX 77032
+            </a>
+            <a class="footer-top__phone" href="tel:8323475843">+832-347-5843</a>
+            <a class="footer-top__email" href="mailto:contact@Glee.com">contact@Glee.com</a>
+          </address>
+        </li>
+        <li class="footer-top__card footer-top__card-nav">
+          <button class="footer-top__title">Services</button>
           <ul class="footer-top__list">
             <li class="footer-top__item">
               <a class="footer-top__link" href="about.html">About us</a>
@@ -469,10 +472,9 @@
               <a class="footer-top__link" href="terms.html">Terms & Condition</a>
             </li>
           </ul>
-        </div>
-
-        <div class="footer-top__item footer-top__nav">
-          <h3 class="footer-top__title">Account</h3>
+        </li>
+        <li class="footer-top__card footer-top__card-nav">
+          <button class="footer-top__title">Account</button>
           <ul class="footer-top__list">
             <li class="footer-top__item">
               <a class="footer-top__link" href="#">Your Account</a>
@@ -487,33 +489,47 @@
               <a class="footer-top__link" href="">Register</a>
             </li>
           </ul>
-        </div>
-        <div class="footer-top__item footer-top__item-form">
-          <h3 class="footer-top__title">newsletter</h3>
+        </li>
+        <li class="footer-top__card footer-top__card-form">
+          <button class="footer-top__title">newsletter</button>
           <p class="footer-top__text">
             Subscribe by our newsletter and get
             update protidin.
           </p>
-          <form class="footer-top__form" action="#" >
-            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+          <!-- <form class="footer-top__form" action="#" >
+          <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+          <button class="footer-top__form-btn" type="submit">Subscribe</button>
+        </form> -->
+
+          <form class="footer-top__form send-form-newsletter" action="#">
+            <input type="hidden" name="project_name" value="marcho">
+            <input type="hidden" name="admin_email" value="anastasiaseredna@gmail.com">
+            <input type="hidden" name="form_subject" value="Marcho">
+            <input class="footer-top__form-input" value="" name="email" type="email" placeholder="Your email address"
+              required>
             <button class="footer-top__form-btn" type="submit">Subscribe</button>
           </form>
-        </div>
-      </div>
+
+        </li>
+      </ul>
+
       <div class="footer-buttom">
         <p class="footer-buttom__copy">
-          ©2020 CopyRight Example. All rights reserved. 
+          ©2020 CopyRight Example. All rights reserved.
         </p>
         <ul class="footer-buttom__page">
           <li class="footer-buttom__page-list">
-            <a class="footer-buttom__page-link" href="index.html">Home</a>  
+            <a class="footer-buttom__page-link" href="index.html">Home</a>
           </li>
+
           <li class="footer-buttom__page-list">
-            <a class="footer-buttom__page-link" href="about.html">About</a>  
-          </li>     
+            <a class="footer-buttom__page-link" href="about.html">About</a>
+          </li>
+
           <li class="footer-buttom__page-list">
             <a class="footer-buttom__page-link" href="blog.html">Blog</a>
-          </li> 
+          </li>
+
           <li class="footer-buttom__page-list">
             <a class="footer-buttom__page-link" href="contact.html">Contact</a>
           </li>
