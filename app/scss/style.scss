@@ -2,21 +2,7 @@
     visibility: hidden;
 }
 
-.top {
-    background-color: #edf1f4;
-    margin-bottom: 120px;
 
-    &-container {
-        max-width: 1700px;
-        margin: 0 auto;
-        text-align: center;
-        padding: 35px 0 35px;
-    }
-
-    &__title {
-        margin-bottom: 11px;
-    }
-}
 
 @import "reset";
 @import "vars";
@@ -27,6 +13,7 @@
 
 
 @import "header";
+@import "top";
 @import "top-slider";
 @import "categories";
 @import "footer";
