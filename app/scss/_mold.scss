@@ -93,16 +93,16 @@
     }
 }
 
-@media(max-width: 620px){
-    .mold{
+@media(max-width: 620px) {
+    .mold {
         margin-bottom: 60px;
     }
 }
 
-@media(max-width: 375px){
-    .mold{
-       &__help{
-        flex-wrap: wrap;
-       } 
-    } 
+@media(max-width: 375px) {
+    .mold {
+        &__help {
+            flex-wrap: wrap;
+        }
+    }
 }
