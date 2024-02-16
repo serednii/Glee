@@ -78,7 +78,10 @@
         &__link {
             margin-bottom: 20px;
             display: inline-block;
-
+            transition: text-decoration-line 3s;
+            &:hover{
+                text-decoration-line: underline;
+            }
             &:focus {
                 background-color: #f9fafb;
                 border-color: #f9fafb;
