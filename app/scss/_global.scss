@@ -1,7 +1,18 @@
 .hidden {
   visibility: hidden;
 }
-
+.display-parametr {
+  position: fixed;
+  min-width: 50px;
+  height: 1.5rem;
+  padding: 0 10px;
+  line-height: 1.5rem;
+  background-color: black;
+  color: white;
+  top:50px;
+  left: 50%;
+  z-index: 1000;
+}
 
 body {
   font-size: 15px;

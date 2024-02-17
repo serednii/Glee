@@ -1,5 +1,5 @@
 .shop {
-    padding-bottom: 120px;
+    margin-bottom: 120px;
 
     &__inner {
         display: grid;
@@ -192,6 +192,9 @@
 
 
 @media(max-width: 620px) {
+    .shop{
+        margin-bottom: 50px;
+    }
     .shop-content {
         &__inner {
             grid-template-columns: repeat(1, 1fr);

@@ -171,3 +171,19 @@ $(function () {
 
 });
 
+
+function screenParametr(){
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  $('.display-parametr').text(`${width}  ${height}`);
+
+  console.log(width) 
+  console.log(height) 
+
+}
+
+screenParametr()
+
+window.addEventListener('resize', (e) => {
+  screenParametr()
+});
