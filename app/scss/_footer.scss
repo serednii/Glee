@@ -149,6 +149,15 @@
             }
         }
 
+        &__page-list:not(:last-child){
+            position: relative;
+            &::after{
+                content: '|';
+                position: absolute;
+                padding-left: 10px;
+            }
+        }
+
         &__page-link {
             color: $footer;
             padding: 3px;
