@@ -130,6 +130,14 @@ body {
   &__item {
     border: 1px solid $accent;
     padding: 18px 20px;
+    transition: background-color .3s;
+    &:hover{
+      background-color: #a3bbc8;
+    }
+    &:focus{
+      outline: 0;
+      background-color: #a3bbc8;
+    }
   }
 
   &__item-active {
@@ -140,12 +148,6 @@ body {
     @extend %rubik-400;
     font-size: 16px;
     color: #243f4d;
-
-    &:focus {
-      border-color: #1a1e21;
-      outline: 0;
-      box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-    }
   }
 
   &__link-active {
@@ -156,12 +158,6 @@ body {
     @extend %rubik-400;
     font-size: 16px;
     color: #243f4d;
-
-    &:focus {
-      border-color: #1a1e21;
-      outline: 0;
-      box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-    }
   }
 }
 
