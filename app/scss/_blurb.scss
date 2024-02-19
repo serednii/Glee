@@ -12,7 +12,7 @@
         display: flex;
         justify-content: flex-end;
         max-width: 870px;
-        height: 390px;
+        min-height: 390px;
         width: 100%;
         background-color: #feefe2;
 
@@ -42,6 +42,7 @@
             color: #243f4d;
             font-size: 16px;
             margin-bottom: 36px;
+            word-break: break-all;
         }
 
         &__link {
@@ -119,7 +120,7 @@
 @media(max-width: 1050px) {
     .blurb {
         &__items {
-            display: block;
+            flex-wrap: wrap;
         }
 
         &__item {
@@ -184,7 +185,7 @@
         }
 
         &__item {
-            height: 250px;
+            min-height: 250px;
             justify-content: flex-start;
         }
 
