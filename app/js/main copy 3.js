@@ -8,27 +8,27 @@ $(function () {
     autoplaySpeed: 2000
   });
 
+  // $('.menu__btn').on('click', function () {
+  //   $('.menu__list').toggleClass('menu__list--active');
+  //   $('.menu__btn').toggleClass('menu__btn--active');
+  // });
   //--------------------------------------------------------
-  //Показує або ховає блок фільтрів при кліку на кнопку фільтра і міняє aria-label
+
   $('.shop__filter-btn').on('click', function () {
     $('.shop__filters').slideToggle();
-    $(this).attr('aria-label', function (_, attr) {
-      return attr === 'Open filter' ? 'Close filter' : 'Open filter';
-    });
   });
   //--------------------------------------------------------
 
-  //Показує або ховає меню при кліку на заголовок меню
-  //Режим включається тільки коли маштаб менший 600px
+
+
   //--------------------------------------------------------
+
   function mediaQuery(x) {
     if (x.matches) { // If media query matches
-      //коли маштаб менший 600px
-      $('.footer-top__list, .footer-top__text').attr("style", "display:none");//Ховаємо меню
-      $('.footer-top__title').attr('aria-label', 'Open menu');//добавляємо на кнопку aria-label
-      $('.footer-top__title').attr('aria-hidden', 'false');//добавляємо на кнопку aria-label
+      $('.footer-top__list, .footer-top__text').attr("style", "display:none");
+      $('.footer-top__title').attr('aria-label', 'Open menu');
 
-      //тільки при меншому екрані за 600px включати виключати меню
+      //тільки при меншому екрані за 768px включати виключати меню
       $('.footer-top__title').on('click', function () {
         $(this).next().slideToggle();
         $(this).toggleClass('active');
@@ -40,11 +40,11 @@ $(function () {
       });
 
     } else {
-      //При більшому екрані за 600px розкриваємо меню і робимо йо статистичним
       $('.footer-top__list, .footer-top__text').attr("style", "display:block");
-      $('.footer-top__title').removeAttr('aria-label'); //видаляємо aria-label
-      $('.footer-top__title').attr('aria-hidden', 'true');//ігнорувати кнопку
+      $('.footer-top__title').removeAttr('aria-label');
       $('.footer-top__title').off('click');//Видаляємо оброботчик подій
+
+
     }
   }
 
@@ -56,14 +56,14 @@ $(function () {
 
   // Attach listener function on state changes
   x.addEventListener("change", function () {
+    console.log(x)
+    console.log('x')
+
     mediaQuery(x);
   });
   //--------------------------------------------------------
 
 
-
-
-  //для ціни повзунка range
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
@@ -80,8 +80,6 @@ $(function () {
 
   });
 
-
-  //Нема
   $('.product-slide__thumb').slick({
     asNavFor: '.product-slide__big',
     focusOnSelect: true,
@@ -90,7 +88,7 @@ $(function () {
     vertical: true,
     draggable: false
   });
-  //нема
+
   $('.product-slide__big').slick({
     asNavFor: '.product-slide__thumb',
     draggable: false,
@@ -98,7 +96,6 @@ $(function () {
     fade: true
   });
 
-  //нема
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
@@ -107,7 +104,6 @@ $(function () {
     $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
   });
-
 
   $('.related__items').slick({
     dots: false,
@@ -144,12 +140,8 @@ $(function () {
     // autoplaySpeed: 2000
   });
 
-
-  // стилізація input +-
   $('.select-style, .product-one__num').styler();
 
-
-  //Зірки рейтингу
   $(".star").rateYo({
     starWidth: "11px",
     normalFill: "#d6d6d6",
@@ -183,7 +175,14 @@ $(function () {
 });
 
 
+function screenParametr() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  $('.display-parametr').text(`${width}  ${height}`);
+}
 
+screenParametr()
 
-
-
+window.addEventListener('resize', (e) => {
+  screenParametr()
+});
