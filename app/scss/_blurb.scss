@@ -151,7 +151,6 @@
     }
 }
 
-
 @media(max-width: 620px) {
     .blurb {
         margin-bottom: 60px;
@@ -186,6 +185,7 @@
 
         &__item {
             height: 250px;
+            justify-content: flex-start;
         }
 
         &__item__link {
