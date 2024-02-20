@@ -162,6 +162,9 @@ body {
 }
 
 @media (max-width: 620px) {
+  .parent {
+    padding-top: 5px;
+  }
   .title {
     font-size: 33px;
     line-height: 36px;

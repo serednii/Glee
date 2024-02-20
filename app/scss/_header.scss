@@ -207,7 +207,7 @@
 @media(max-width: 610px) {
     .header {
         padding: 10px 0;
-
+        margin-bottom: 0;
         &__inner {
             display: grid;
             grid-template-columns: repeat(2, 2fr);

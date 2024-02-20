@@ -192,6 +192,9 @@
 
 
 @media(max-width: 620px) {
+    .shop-content-inner {
+        gap: 0;
+    }
     .shop{
         margin-bottom: 50px;
     }

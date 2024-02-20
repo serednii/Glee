@@ -47,10 +47,12 @@
 }
 
 .categories {
+
+    &-info {
+        margin-bottom: 152px;
+    }
+
     &__top {
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
         margin-bottom: 66px;
     }
 
@@ -89,8 +91,7 @@
         display: flex;
         gap: 20px;
         max-width: 1168px;
-        flex-wrap: wrap;
-        margin-bottom: 152px;
+        flex-wrap: wrap;    
         justify-content: center;
     }
 
@@ -254,6 +255,11 @@
 @media(max-width: 500px) {
     .info {
         display: block;
+    }
+    .categories{
+        &__content{
+            gap: 0;
+        }
     }
 }
 

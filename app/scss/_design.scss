@@ -120,8 +120,6 @@
 }
 
 @media(max-width:1950px) {
-
-
     .design__video__play {
         width: 6.614vw;
         height: 6.614vw;
@@ -133,7 +131,9 @@
 @media(max-width: 620px) {
     .design {
         margin-bottom: 60px;
-
+        &__top{
+            margin-bottom: 40px;
+        }
         &__content {
             margin-bottom: 60px;
             grid-template-columns: repeat(auto-fill, 300px);
@@ -141,10 +141,6 @@
 
         &__text {
             padding: 0;
-        }
-
-        &__filter-btn {
-            margin-bottom: 36px;
         }
 
         &__item {
