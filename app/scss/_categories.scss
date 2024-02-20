@@ -27,10 +27,8 @@
         transition: all 0.3s;
 
         &:focus {
-            border-color: #f9fafb;
-            box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
-            outline: 0;
             border-radius: 10px;
+            @include white-focus;
         }
 
         &:hover {
@@ -43,7 +41,7 @@
         display: flex;
         gap: 20px;
         max-width: 1168px;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -69,11 +67,7 @@
         }
 
         a:focus {
-            // border-color: #6a8190;
-            // border-color: red;
-
             box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.9);
-            // box-shadow: 0px 0px 39px 32px rgba(168, 158, 168, 1);
         }
 
         a:first-child {
@@ -141,10 +135,11 @@
         transition: background-color 0.3s;
 
         &:focus {
+            border-radius: 50%;
+            @include white-focus;
             border-color: #f9fafb;
             box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
             outline: 0;
-            border-radius: 50%;
         }
 
         svg {

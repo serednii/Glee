@@ -24,10 +24,8 @@
         transition: all 0.3s;
 
         &:focus {
-            border-color: #f9fafb;
-            box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
-            outline: 0;
             border-radius: 10px;
+            @include white-focus;
         }
 
         &:hover {
@@ -107,10 +105,8 @@
         }
 
         &:focus {
-            border-color: #f9fafb;
-            box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
-            outline: 0;
             border-radius: 10px;
+            @include white-focus;
         }
 
         &:hover+.design__video__popup {
@@ -131,9 +127,11 @@
 @media(max-width: 620px) {
     .design {
         margin-bottom: 60px;
-        &__top{
+
+        &__top {
             margin-bottom: 40px;
         }
+
         &__content {
             margin-bottom: 60px;
             grid-template-columns: repeat(auto-fill, 300px);
