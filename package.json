@@ -5,26 +5,36 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d app"
+    "deploy": "gh-pages -d app",
+    "lint": "eslint app --ext .js",
+    "stylelint": "stylelint 'app/scss/**/*.{css,scss}'",
+    "stylelint:fix": "stylelint 'app/scss/**/*.{css,scss}' --fix"
   },
-  
   "author": "serednia anastasia",
   "license": "ISC",
-
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.4",
     "del": "^6.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
     "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "ion-rangeslider": "^2.3.1",
     "jquery-form-styler": "^2.0.2",
     "mixitup": "^3.3.1",
+    "postcss-lit": "^1.1.1",
     "rateyo": "^2.3.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "stylelint": "^16.2.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4"
   },
-  
   "dependencies": {
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -35,6 +45,5 @@
     "rangeslider.js": "^2.3.3",
     "sass": "^1.36.0"
   },
-  
   "description": ""
 }
