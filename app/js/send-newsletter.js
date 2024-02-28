@@ -1,12 +1,6 @@
-const mailPath1 = 'http://nastya03.zzz.com.ua/newsletter.php';
+const newsletterPatch = 'http://glee.smm.zzz.com.ua/newsletter.php';
 
-function formDataToObject(formData) {
-  let jsonObject = {};
-  for (const [key, value] of formData.entries()) {
-    jsonObject[key] = value;
-  }
-  return jsonObject;
-}
+
 
 document.querySelectorAll('.send-form-newsletter').forEach((el) => {
 
@@ -14,14 +8,12 @@ document.querySelectorAll('.send-form-newsletter').forEach((el) => {
     e.preventDefault()
     const data = formDataToObject(new FormData(this))
 
-    if(!validateEmail(data.email)){
+    if (!validateEmail(data.email)) {
       alert('Email no valid')
       return;
     }
 
-    console.log(data)
-
-    fetch(mailPath1, {
+    fetch(newsletterPatch, {
       method: 'POST',
       mode: 'cors', // no-cors, *cors, same-origin
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -39,10 +31,13 @@ document.querySelectorAll('.send-form-newsletter').forEach((el) => {
       .then(result => {
         // Обробка відповіді від сервера
         if (result.success) {
-          alert("Ви добавленні в розсилку, на вказану вами пошту було відправлено повідомлення");
-          clearForm(e)
+          // alert("You have been added to the mailing list, a confirmation has been sent to the email you specified");
+          showInformationSendMail("You have been added to the mailing list, a confirmation has been sent to the email you specified", 'send-message-popup');
+          clearForm(e);
         } else {
-          alert("Ви не добавленні в розсилку виникла помилка:  " + result.message);
+          // alert("You are not added to the newsletter, an error occurred, please try again later:  " + result.message);
+          showInformationSendMail("You are not added to the newsletter, an error occurred, please try again later:  " + result.message, 'send-message-popup');
+
         }
       })
       .catch(error => {

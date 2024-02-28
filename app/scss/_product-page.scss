@@ -63,9 +63,15 @@
         @extend %rubik-400;
 
         &:focus {
-            border-color: #1a1e21;
-            outline: 0;
-            box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+            @include black-focus;
+        }
+
+        transition: background-color 0.3s ease-in-out,
+        color 0.3s ease-in-out;
+
+        &:hover {
+            color: #a3bbc8;
+            background-color: white;
         }
     }
 
@@ -237,15 +243,22 @@
         background-color: #edf1f4;
         padding: 18px 23px;
         border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        outline: transparent;
 
         &+.product-tabs__top-item {
             margin-left: 12px;
         }
 
         &:focus {
-            border-color: #1a1e21;
-            outline: 0;
-            box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+            @include black-focus;
+        }
+
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 2px 1px 10px 9px rgba(163, 187, 200, 0.81);
         }
     }
 

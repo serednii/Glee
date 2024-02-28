@@ -2,8 +2,12 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-@import "global";
+@import 'mixin';
 
+@import "global";
+@import "modals";
+@import "pagination";
+@import "bleadcrumbs";
 @import "header";
 @import "top";
 @import "burger";
@@ -30,3 +34,4 @@
 @import "contact";
 @import "product-page";
 @import "footer";
+@import "captcha";
