@@ -26,3 +26,8 @@ r4 - In categories__filter-btn, replace div with ul, li
                 Contact
 1 - contact__info leave one h2 tag
 2- contact__info-list add the address tag to the block with contacts
+
+
+
+
+shop-content-item-links добавити aria атрибути 

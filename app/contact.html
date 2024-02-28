@@ -6,16 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Glee</title>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#9cb0b3">
+
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css?v=0.1.16">
 </head>
 
 <body>
   <div class="display-parametr"></div>
+  <!-- <div class="btn-modals__inner">
+    <button class="btn-modal" data-path="form-popup">Окно 1</button>
+    <button class="btn-modal" data-path="me-popup">Окно 2</button>
+  </div> -->
+
+
+  <div class="modals">
+    <div class="modal-overlay">
+
+      <div class="modal modal__card modal__card-heart" data-target="heart-popup">
+        <button class="modal-close-btn" aria-label="close popup">
+          <svg viewBox="0 0 20 20" fill="currentColor" height="1em" width="1em">
+            <path
+              d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z">
+            </path>
+          </svg>
+        </button>
+        <p class="modal__card-title">Heart</p>
+        <ul>
+          <li>tovar</li>
+          <li>tovar</li>
+          <li>tovar</li>
+          <li>tovar</li>
+          <li>tovar</li>
+        </ul>
+      </div>
+
+      <div class="modal modal__card modal__card-cart" data-target="cart-popup">
+        <button class="modal-close-btn" aria-label="close popup">
+          <svg viewBox="0 0 20 20" fill="currentColor" height="1em" width="1em">
+            <path
+              d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z">
+            </path>
+          </svg>
+        </button>
+        <p class="modal__card-title">Cart</p>
+        <ul>
+          <li>tovar</li>
+          <li>tovar</li>
+          <li>tovar</li>
+          <li>tovar</li>
+          <li>tovar</li>
+        </ul>
+
+      </div>
+
+      <div class="modal modal-message" data-target="send-message-popup">
+        <button class="modal-close-btn" aria-label="close popup">
+          <svg viewBox="0 0 20 20" fill="currentColor" height="1em" width="1em">
+            <path
+              d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z">
+            </path>
+          </svg>
+        </button>
+        <p class="modal-message__content"></p>
+      </div>
+
+    </div>
+  </div>
+
+
   <div class="parent">
     <header class="header">
       <div class="container">
@@ -49,22 +119,22 @@
             </ul>
           </nav>
           <div class="user-nav">
-            <a class="user-nav__link user-nav__link--search" href="#">
+            <button class="user-nav__link user-nav__link--search" href="#">
               <img class="user-nav__link-img" src="images/header/icons/search.svg" alt="search icon">
-            </a>
+            </button>
             <div class="user-nav__inner">
-              <a class="user-nav__inner-link">
+              <button class="user-nav__inner-link btn-modal" data-path="heart-popup">
                 <img class="user-nav__link-img" src="images/header/icons/heart.svg" alt="heart icon">
                 <span class="user-nav__num">0</span>
-              </a>
-              <a class="user-nav__inner-link">
+              </button>
+              <button class="user-nav__inner-link btn-modal" data-path="cart-popup">
                 <img class="user-nav__link-img" src="images/header/icons/cart.svg" alt="cart icon">
                 <span class="user-nav__num">0</span>
-              </a>
+              </button>
             </div>
-            <a class="user-nav__link user-nav__link-user" href="#">
+            <button class="user-nav__link user-nav__link-user" href="#">
               <img class="user-nav__link-img-user" src="images/header/icons/user.svg" alt="user icon">
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -164,20 +234,18 @@
                   <textarea class="contact-form__textarea" name="message" placeholder="Comment" required> </textarea>
                 </div>
                 <input type="text" name=":" style="display: none" value="" />
-                <img src="captcha.php" />
-                <input type="text" name="kapcha" />
+                <img class="img-captcha" src="captcha.php" />
+                <input class="contact-form__text-input input-captcha" type="text" name="kapcha" />
                 <button class="contact-form__btn" type="submit">SEND MESSAGE</button>
               </form>
               <div id="map" class="map">
                 <script type="text/javascript" charset="utf-8" async
                   src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A64bd618d2990a028513dfe6266d2bbd05d120997e7ed03996709aea1739c1922&amp;width=480&amp;height=335&amp;lang=ru_RU&amp;scroll=true"></script>
-
               </div>
             </div>
           </div>
         </div>
       </section>
-
 
       <section class="blog">
         <div class="container1170">
@@ -390,8 +458,13 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
   </div>
-  <script defer src="js/map.js"></script>
+  <!-- <script defer src="js/map.js"></script> -->
   <script src="js/main.min.js"></script>
 </body>
 

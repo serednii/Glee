@@ -18,6 +18,11 @@
         margin-right: 20px;
         height: min-content;
         padding: 3px;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: #a3bbc8;
+        }
 
         &:focus {
             border-color: #f9fafb;
@@ -150,6 +155,12 @@
     }
 
     &-author {
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: #a3bbc8;
+        }
+
         &:focus {
             @include black-focus;
         }

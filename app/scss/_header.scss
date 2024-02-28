@@ -70,6 +70,10 @@
         &-link {
             position: relative;
             transition: all .3s;
+            background-color: transparent;
+            border: none;
+            outline: transparent;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.2);
@@ -94,6 +98,10 @@
     &__link {
         position: relative;
         transition: all 0.3s;
+        background-color: transparent;
+        border: none;
+        outline: transparent;
+        cursor: pointer;
 
         &:hover {
             border-color: #f9fafb;
@@ -188,6 +196,7 @@
         &__list-link {
             display: block;
             padding: 12px 0;
+
         }
 
         &__btn {
@@ -223,7 +232,7 @@
         justify-content: end;
 
         &__list {
-            top: 180px;
+            top: 0;
         }
     }
 
@@ -231,7 +240,11 @@
         width: 100%;
         margin-top: 20px;
         grid-column: 1/3;
-        // justify-content: space-around;
+    }
+}
 
+@media(max-width: 360px) {
+    .user-nav__inner {
+        width: 100px;
     }
 }

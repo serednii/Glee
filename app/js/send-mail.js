@@ -1,19 +1,5 @@
-const mailPath = 'http://glee.smm.zzz.com.ua/send-mail.php';
+const sendMailPatch = 'http://glee.smm.zzz.com.ua/send-mail.php';
 
-function formDataToObject(formData) {
-  let jsonObject = {};
-  for (const [key, value] of formData.entries()) {
-    jsonObject[key] = value;
-  }
-  return jsonObject;
-}
-
-function clearForm(formElement) {
-  formElement.target.querySelectorAll('input:not([type="hidden"]) ,textarea').forEach(e => {
-    e.checked = e.defaultChecked;
-    e.value = "";
-  })
-}
 
 
 document.querySelectorAll('.send-form-mail').forEach((el) => {
@@ -28,9 +14,8 @@ document.querySelectorAll('.send-form-mail').forEach((el) => {
       return;
     }
 
-    // console.log(data)
 
-    fetch(mailPath, {
+    fetch(sendMailPatch, {
       method: 'POST',
       mode: 'cors', // no-cors, *cors, same-origin
       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -48,11 +33,13 @@ document.querySelectorAll('.send-form-mail').forEach((el) => {
       .then(result => {
         // Обробка відповіді від сервера
         if (result.success) {
-          alert("Письмо отправлено");
+          // alert("Письмо отправлено");
+          showInformationSendMail("Letter sent", 'send-message-popup');
           clearForm(e)
           // e.target.querySelectorAll('textarea').forEach(e => e.value = "")
         } else {
-          alert("Письмо не отправлено произошла ошибка:  " + result.message);
+          // alert("The message was not sent, there was an error:  " + result.message);
+          showInformationSendMail("The message was not sent, there was an error:  " + result.message, 'send-message-popup');
         }
       })
       .catch(error => {
