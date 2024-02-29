@@ -21,11 +21,11 @@
         transition: color 0.3s ease-in-out;
 
         &:hover {
-            color: #a3bbc8;
+            color: $accent;
         }
 
         &:focus {
-            border-color: #f9fafb;
+            border-color: $VeryLightGray;
             box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
             outline: 0;
             border-radius: 10px;
@@ -88,6 +88,7 @@
         &:hover {
             background-color: #fff;
             color: $accent;
+            @include blue-hover;
         }
 
         &:focus {
@@ -108,7 +109,7 @@
         @extend %dmsans-700;
         font-size: 18px;
         padding-bottom: 11px;
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 1px solid $Gainsboro;
 
         &:focus {
             @include black-focus;
@@ -124,7 +125,7 @@
     &__fon {
         position: static;
         height: 436px;
-        background-color: #fef7f0;
+        background-color: $VeryLightPink;
         margin-top: -345px;
     }
 
@@ -140,7 +141,7 @@
     &-author,
     &-data {
         position: relative;
-        color: #222933;
+        color: $VeryDarkBlue;
         padding-left: 20px;
 
         &::before {
@@ -158,7 +159,11 @@
         transition: color 0.3s ease-in-out;
 
         &:hover {
-            color: #a3bbc8;
+            color: $accent;
+
+            background-color: #fff;
+            color: $accent;
+            @include blue-hover;
         }
 
         &:focus {
