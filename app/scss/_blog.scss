@@ -86,8 +86,6 @@
         transition: color 0.3s, background-color 0.3s;
 
         &:hover {
-            background-color: #fff;
-            color: $accent;
             @include blue-hover;
         }
 
