@@ -46,6 +46,7 @@ function scripts() {
       'node_modules/ion-rangeslider/js/ion.rangeSlider.js', //Плагин ion.rangeSlider  динамически менять шаг ползунка?
       'node_modules/jquery-form-styler/dist/jquery.formstyler.js', //плагин для стилизации селектов, чекбоксов, радиокнопок, файловых и числовых полей
       'app/js/modals.js',
+      'app/js/counter-price.js',
       'app/js/functions.js',
       'app/js/screen-parameter.js',
       'app/js/button-focus.js',
