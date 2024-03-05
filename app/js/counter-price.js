@@ -1,13 +1,20 @@
 
 
+console.log('dataCart')
+console.log(dataCart)
+console.log('dataCart')
+
+localStorage.setItem('dataCart', JSON.stringify(dataCart))
+
+
 //Обчисляємо загальну суму віх карточок
 function totalCostCards(eventTarget, parentList, priceCard, totalPrice) {
   const modalCardList = eventTarget?.closest(parentList);
   const modalCards = modalCardList?.querySelectorAll(priceCard);
   const modalCardSum = modalCardList?.querySelector(totalPrice); //Загальна сума всіх товарів
   const arrayFromNodeList = Array.from(modalCards);
-  const totalCost = arrayFromNodeList.reduce((a, e) => a + +e.innerText, 0)
-  modalCardSum.innerText = totalCost
+  const totalCost = arrayFromNodeList.reduce((a, e) => a + +e.innerText, 0);
+  modalCardSum.innerText = totalCost;
 }
 
 
@@ -16,7 +23,7 @@ eventTarget && totalCostCards(eventTarget, '.modal__card-list', '.modal__card-pr
 
 function numberCounter(numberBlockParent, callBack = undefined) {
   document.body.addEventListener('click', function (event) {
-    event.preventDefault()
+    // event.preventDefault()
     const eventTarget = event.target;
     const nodeParent = eventTarget.closest(numberBlockParent)
     if (nodeParent) {
@@ -58,7 +65,7 @@ function numberCounter(numberBlockParent, callBack = undefined) {
 
 
   document.body.addEventListener('input', function (event) {
-    event.preventDefault()
+    // event.preventDefault()
     const eventTarget = event.target;
     const nodeParent = eventTarget.closest(numberBlockParent)
     if (nodeParent) {
