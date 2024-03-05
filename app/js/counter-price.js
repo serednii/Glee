@@ -1,6 +1,6 @@
 
 
-//
+//Обчисляємо загальну суму віх карточок
 function totalCostCards(eventTarget, parentList, priceCard, totalPrice) {
   const modalCardList = eventTarget?.closest(parentList);
   const modalCards = modalCardList?.querySelectorAll(priceCard);
@@ -23,10 +23,6 @@ function numberCounter(numberBlockParent, callBack = undefined) {
       const input = nodeParent.querySelector('.my-number__input');
       const buttonMinus = nodeParent.querySelector('.my-number__minus');
       const buttonPlus = nodeParent.querySelector('.my-number__plus');
-      // console.log(input)
-      // console.log(buttonMinus)
-      // console.log(buttonPlus)
-      // console.log(event.target)
 
       if (input && buttonMinus && buttonPlus) {
         const min = +input.getAttribute("min") || -9999999;
@@ -69,10 +65,6 @@ function numberCounter(numberBlockParent, callBack = undefined) {
       const input = nodeParent.querySelector('.my-number__input');
       const buttonMinus = nodeParent.querySelector('.my-number__minus');
       const buttonPlus = nodeParent.querySelector('.my-number__plus');
-      // console.log(input)
-      // console.log(buttonMinus)
-      // console.log(buttonPlus)
-      // console.log(event.target)
 
       if (input && buttonMinus && buttonPlus) {
         const min = +input.getAttribute("min") || -9999999;
@@ -116,7 +108,7 @@ function numberCounter(numberBlockParent, callBack = undefined) {
 }
 
 function printObj(obj) {
-  console.log(obj)
+
 
 
   // buttonMinus
