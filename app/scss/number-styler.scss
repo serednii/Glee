@@ -15,9 +15,9 @@
     }
 
 
-    &__button {
-        cursor: pointer;
-    }
+    // &__button {
+    //     cursor: pointer;
+    // }
 
     &__minus {}
 
@@ -27,7 +27,7 @@
         outline: none;
     }
 
-    &_plus {
+    &__plus {
         margin-left: -6px;
     }
 
