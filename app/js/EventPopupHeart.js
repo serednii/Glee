@@ -83,7 +83,7 @@ class EventPopupHeart {
         cards.insertAdjacentHTML("beforeend",
           `<li class="modal__card-item">
         <p class="modal__card-empty">
-          У вас немає добавлених товарів
+        You have no products added
         </p>
       </li>
 `
