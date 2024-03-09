@@ -13,26 +13,22 @@ class EventBody {
 
   handlerBodyClick(event) {
     for (let keyFunction of this.#handlerClickFunction) {
-      console.log('jjj')
       keyFunction(event)
     }
   }
 
   handlerBodyInput(event) {
     for (let keyFunction of this.#handlerInputFunction) {
-      console.log('jjj')
       keyFunction(event)
     }
   }
 
   addHandlerClickFunction(callBack) {
     this.#handlerClickFunction.push(callBack)
-    console.log(this.#handlerClickFunction)
   }
 
   addHandlerInputFunction(callBack) {
     this.#handlerInputFunction.push(callBack)
-    console.log(this.#handlerInputFunction)
   }
 
 

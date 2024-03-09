@@ -5,7 +5,6 @@ const sendMailPatch = 'http://glee.smm.zzz.com.ua/send-mail.php';
 document.querySelectorAll('.send-form-mail').forEach((el) => {
 
   el.addEventListener('submit', function (e) {
-    console.log(e.target)
     e.preventDefault()
     const data = formDataToObject(new FormData(this))
 

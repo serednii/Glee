@@ -15,7 +15,6 @@ class EventPopupCard {
   }
 
   handlerBodyClick(event) {
-    console.log('handlerBodyClick')
     const eventTarget = event.target;
     const nodeParent = eventTarget.closest(this.cardItem)
     if (nodeParent) {
@@ -84,7 +83,6 @@ class EventPopupCard {
         const value = +input.value;
 
         if (eventTarget === input) {
-          console.log(value)
           if (value >= min && value <= max)
             input.value = value;
           else

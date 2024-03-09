@@ -22,7 +22,6 @@ const showInformationSendMail = (message, path) => {
 openButtonsModals.forEach((el) => {
     el.addEventListener('click', (e) => {
         let path = e.currentTarget.getAttribute('data-path');
-        console.log(path)
         if (path === 'cart-popup') {
             eventPopupCard.renderPopupCart()
             eventPopupCard.startTotalCostCards();
@@ -31,19 +30,6 @@ openButtonsModals.forEach((el) => {
         }
 
         document.body.style.overflowY = 'hidden';
-
-        // modals.forEach((el) => {
-        //     if (el.classList.contains('modal--visible')) {
-        //         // $(el).css.width = '0';
-        //         // el.classList.add('modal--out-visible');
-        //         // $(el).animate({ width: '600px' });
-        //         setTimeout(() => {
-        //             el.classList.remove('modal--out-visible');
-        //             el.classList.remove('modal--visible');
-        //         }, 500);
-        //     }
-        // });
-
         document.querySelector(`[data-target="${path}"]`)?.classList.add('modal--visible');
         setTimeout(() => {
             document.querySelector(`[data-target="${path}"]`)?.classList.add('modal--scaleX');
