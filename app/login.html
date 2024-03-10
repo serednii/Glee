@@ -29,39 +29,47 @@
     <div class="modal-overlay">
 
       <div class="modal modal__card modal__card-heart" data-target="heart-popup">
-        <button class="modal-close-btn" aria-label="close popup">
-          <svg viewBox="0 0 20 20" fill="currentColor" height="1em" width="1em">
-            <path
-              d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z">
-            </path>
-          </svg>
-        </button>
-        <p class="modal__card-title">Heart</p>
-        <ul>
-          <li>tovar</li>
-          <li>tovar</li>
-          <li>tovar</li>
-          <li>tovar</li>
-          <li>tovar</li>
+        <div class="modal__card-top">
+          <p class="modal__card-title">Heart</p>
+          <p class="modal__card-count-product">You have added <span>5</span> products</p>
+          <button class="modal-close-btn" aria-label="close popup">
+            <svg viewBox="0 0 20 20" fill="currentColor" height="1em" width="1em">
+              <path
+                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z">
+              </path>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="modal__card-list">
+
         </ul>
       </div>
 
       <div class="modal modal__card modal__card-cart" data-target="cart-popup">
-        <button class="modal-close-btn" aria-label="close popup">
-          <svg viewBox="0 0 20 20" fill="currentColor" height="1em" width="1em">
-            <path
-              d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z">
-            </path>
-          </svg>
-        </button>
-        <p class="modal__card-title">Cart</p>
-        <ul>
-          <li>tovar</li>
-          <li>tovar</li>
-          <li>tovar</li>
-          <li>tovar</li>
-          <li>tovar</li>
+        <div class="modal__card-top">
+          <p class="modal__card-title">Cart</p>
+          <p class="modal__card-count-product">You have added <span>5</span> products</p>
+
+          <button class="modal-close-btn" aria-label="close popup">
+            <svg viewBox="0 0 20 20" fill="currentColor" height="1em" width="1em">
+              <path
+                d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <ul class="modal__card-list">
         </ul>
+        <div class="modal__card-bottom">
+          <button class="modal__card-shopping">continue shopping</button>
+          <div class="modal__card-order">
+            <div class="modal__card-sum">
+              2500$
+            </div>
+            <button class="modal__card-submit">to order</button>
+          </div>
+        </div>
 
       </div>
 
@@ -116,11 +124,11 @@
               <img class="user-nav__link-img" src="images/header/icons/search.svg" alt="search icon">
             </button>
             <div class="user-nav__inner">
-              <button class="user-nav__inner-link btn-modal" data-path="heart-popup">
+              <button class="user-nav__inner-link user-nav__inner-heart btn-modal" data-path="heart-popup">
                 <img class="user-nav__link-img" src="images/header/icons/heart.svg" alt="heart icon">
                 <span class="user-nav__num">0</span>
               </button>
-              <button class="user-nav__inner-link btn-modal" data-path="cart-popup">
+              <button class="user-nav__inner-link user-nav__inner-cart btn-modal" data-path="cart-popup">
                 <img class="user-nav__link-img" src="images/header/icons/cart.svg" alt="cart icon">
                 <span class="user-nav__num">0</span>
               </button>
