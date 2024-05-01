@@ -27,7 +27,9 @@
         background-color: $accent;
         color: #fff;
         font-size: 18px;
+
         @extend %rubik-500;
+
         padding: 14px 0;
         border: none;
         width: 100%;
@@ -61,7 +63,9 @@
         background-color: #fff;
         color: $darkBlue;
         font-size: 18px;
+
         @extend %rubik-500;
+
         padding: 14px 0;
         border: 2px solid $accent;
         width: 100%;

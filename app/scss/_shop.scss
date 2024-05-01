@@ -58,7 +58,9 @@
 
 .shop-content-item-title {
     display: inline-block;
+
     @extend %rubik-400;
+
     font-size: 40px;
     margin-bottom: 27px;
     transition: color 0.3s ease-in-out;
@@ -76,7 +78,9 @@
 
 .shop-content-item-prise {
     display: inline-block;
+
     @extend %rubik-400;
+
     font-size: 30px;
     color: #333;
     line-height: 3;
@@ -84,6 +88,7 @@
 
 .shop-content-item-text {
     @extend %rubik-400;
+
     font-size: 16px;
     color: $darkBlue;
     margin-bottom: 37px;

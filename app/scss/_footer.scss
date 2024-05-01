@@ -5,7 +5,8 @@
         padding: 70px 0 40px;
         border-bottom: 1px solid #dae4e9;
         display: grid;
-        grid-template-columns: repeat(3, minmax(200px, 300px)) 300px;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 290px));
         color: $footer;
         @extend %rubik-400;
 
@@ -14,6 +15,7 @@
         }
 
         &__card {
+            justify-self: center;
 
             a {
                 transition: color 0.3s ease-in-out;
@@ -62,10 +64,6 @@
             }
         }
 
-        // &__address::before {
-        //     content: "address:";
-        // }
-
         &__phone::before {
             content: "telephone:";
         }
@@ -79,7 +77,9 @@
             background-color: transparent;
             color: #1f2044;
             text-transform: uppercase;
+
             @extend %dmsans-700;
+
             font-size: 16px;
             line-height: 1;
             margin-bottom: 30px;
@@ -128,6 +128,7 @@
 
         &__form-btn {
             @extend %btn;
+
             padding: 12px 14px;
             transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
@@ -194,55 +195,18 @@
     }
 }
 
-// @media(max-width: 1050px) {
-//     .footer {
-//         .footer-top {
-
-//             &__item {
-//                 // text-align: center;
-
-//                 // margin-top: 15px;
-//                 // max-width: 300px;
-//             }
-
-//             &__item-form {
-
-//             }
-//         }
-
-//     }
-// }
-
-@media(max-width: 900px) {
-    .footer {
-        .footer-top {
-            grid-template-columns: repeat(2, 300px);
-
-
-        }
-
-
-    }
-}
 
 
 
 @media(max-width: 620px) {
     .footer {
         .footer-top {
-            grid-template-columns: 100%;
-
-            // &__card {
-            //     justify-self: center;
-            // }
-
-            &__contact {
-                // margin-right: 0;
-            }
 
             &__title {
                 cursor: pointer;
                 margin-bottom: 10px;
+                width: 100%;
+                text-align: center;
             }
 
             &__list {

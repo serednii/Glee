@@ -100,12 +100,14 @@
 
     &__item-title {
         @extend %dmsans-700;
+
         font-size: 22px;
         margin-bottom: 13px;
     }
 
     &__item-text {
         @extend %rubik-400;
+
         color: #565872;
     }
 

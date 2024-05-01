@@ -23,7 +23,9 @@
 
     &__item-text {
         text-align: center;
+
         @extend %dmsans-700;
+
         color: $darkBlue;
     }
 

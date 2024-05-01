@@ -13,13 +13,13 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(width <= 768px) {
     .top {
         margin-bottom: 60px;
     }
 }
 
-@media(max-width: 450px) {
+@media(width <= 450px) {
     .top {
         margin-bottom: 20px;
     }

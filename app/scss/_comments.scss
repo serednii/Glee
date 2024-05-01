@@ -1,5 +1,4 @@
 .comments {
-
     margin-bottom: 40px;
     display: flex;
 
@@ -7,6 +6,7 @@
         margin-bottom: 50px;
         color: $title;
         font-size: 24px;
+
         @extend %rubik-500;
     }
 
@@ -26,19 +26,23 @@
 
     &__content-name {
         @extend %rubik-500;
+
         color: #436372;
         font-size: 16px;
     }
 
     &__content-data {
         @extend %rubik-400;
+
         font-size: 14px;
         color: #9e9e9e;
     }
 
     &__content-text {
         margin-bottom: 17px;
+
         @extend %rubik-400;
+
         font-size: 16px;
         color: #565872;
         line-height: 30px;
@@ -69,7 +73,7 @@
         margin-left: 130px;
         border-bottom: 1px solid #e4e4e4;
         border-top: 1px solid #e4e4e4;
-        padding: 20px 0 20px;
+        padding: 20px 0;
     }
 }
 

@@ -29,12 +29,15 @@
         color: $darkBlue;
         font-size: 72px;
         line-height: 1.1;
+
         @extend %rubik-500;
+
         margin-bottom: 15px;
     }
 
     &__text {
         @extend %rubik-400;
+
         font-size: 18px;
         color: $title;
         line-height: 1.5;
@@ -44,6 +47,7 @@
 
     &__link {
         @extend %btn;
+
         display: flex;
         line-height: 60px;
         width: 200px;
@@ -101,20 +105,13 @@
                 font-size: 11px;
                 width: 26px;
                 height: 26px;
-                // border: none;
                 color: #667983;
-                // cursor: pointer;
-
-                &:focus {
-                    border-color: #565e64;
-                    outline: 0;
-                    box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
-                }
+                cursor: pointer;
+                outline: 0;
             }
 
             &.slick-active {
                 button {
-                    color: $darkBlue;
                     background-color: #fff;
                 }
             }
@@ -140,7 +137,6 @@
 
 @media(max-width: 1050px) {
     .top-slider {
-
         &__item {
             .top-slider__images {
                 background-image: none;
@@ -171,7 +167,7 @@
 
 @media(max-width: 620px) {
     .top-slider {
-        padding-top: 0px;
+        padding-top: 0;
 
         &__content {
             padding-left: 20px;

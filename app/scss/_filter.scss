@@ -7,7 +7,9 @@
         position: relative;
         display: inline-block;
         text-transform: uppercase;
+
         @extend %dmsans-700;
+
         font-size: 18px;
         color: $darkBlue;
         margin-bottom: 30px;
@@ -45,6 +47,7 @@
 
     &__text {
         @extend %rubik-400;
+
         color: $darkBlue;
     }
 }
@@ -136,13 +139,16 @@
 
     &__text {
         @extend %rubik-400;
+
         color: $darkBlue;
         font-size: 16px;
     }
 
     &__num {
         font-size: 16px;
+
         @extend %rubik-400;
+
         color: #b3b3b3;
     }
 }
@@ -150,7 +156,6 @@
 .filter-recent {
     &__label {
         display: flex;
-
         margin-bottom: 23px;
     }
 
@@ -165,7 +170,9 @@
 
     &__text {
         font-size: 14px;
+
         @extend %rubik-400;
+
         color: #333;
         margin-bottom: 14px;
     }
@@ -177,22 +184,22 @@
 
     &__price {
         font-size: 15px;
+
         @extend %rubik-400;
+
         color: #333;
     }
 }
 
 @media(max-width: 1230px) {
     .shop {
-
-
         &__filters {
             width: 100%;
             margin-right: 0;
             display: none;
             position: fixed;
             height: 100vh;
-            top: 0px;
+            top: 0;
             left: 0;
             padding: 0 20px;
             z-index: 100;
