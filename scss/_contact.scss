@@ -1,0 +1,141 @@
+.contact {
+    margin-bottom: 130px;
+
+    &__info {
+        margin-bottom: 120px;
+    }
+
+    &__info-subtitle {
+        text-align: center;
+
+        @extend %rubik-400;
+
+        font-size: 16px;
+        color: $accent;
+    }
+
+    &__info-title {
+        @extend %dmsans-700;
+
+        font-size: 35px;
+        color: #436372;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+
+    &__info-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info-item {
+        position: relative;
+        text-align: center;
+        background-color: #fafafa;
+        width: 370px;
+        min-height: 385px;
+        border: 3px solid transparent;
+        transition: all 0.3s;
+    }
+
+    &__info-item:hover {
+        border: 3px solid $accent;
+    }
+
+    &__info-img-link {
+        position: relative;
+        display: inline-block;
+        background-color: #fff;
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        box-shadow: 0 6px 57px 0 rgb(37 37 37 / 5%);
+        margin-top: 70px;
+        margin-bottom: 65px;
+    }
+
+    &__info-img {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+
+        path {
+            fill: $accent;
+        }
+    }
+
+    &__info-item-title {
+        @extend %dmsans-700;
+
+        font-size: 20px;
+        color: #222;
+        margin-bottom: 23px;
+    }
+
+    &__info-text {
+        @extend %rubik-400;
+
+        font-size: 16px;
+        color: #565872;
+        line-height: 25px;
+    }
+
+    &__info-text,
+    &__info-img-link {
+        &:focus {
+            @include white-focus;
+        }
+    }
+
+}
+
+@media(width <= 1200px) {
+    .contact {
+        &__info-list {
+            display: block;
+        }
+
+        &__info-item {
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+
+
+@media(width <= 450px) {
+    .contact {
+        &__info {
+            margin-bottom: 60px;
+        }
+
+        &__info-item {
+            min-height: 250px;
+        }
+
+        &__info-img-link {
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(width <= 375px) {
+    .contact {
+        &__info-title {
+            margin-bottom: 30px;
+        }
+
+        &__info-item {
+            min-height: 200px;
+            padding-top: 50px;
+        }
+
+        &__info-img-link {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.recent-posts {
+    &__item {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__title-link {
+        @extend %rubik-400;
+
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 12px;
+    }
+
+    &__img-link {
+        margin-right: 20px;
+        min-width: 70px;
+    }
+
+    &__title-link,
+    &__img-link {
+        display: block;
+
+        &:focus {
+            @include black-focus;
+        }
+    }
+
+    &__img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    &__data {
+        position: relative;
+
+        @extend %rubik-400;
+
+        font-size: 12px;
+        color: #9a9a9a;
+        padding-left: 23px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 15px;
+            left: 0;
+        }
+    }
+
+    &__data::before {
+        background-image: url("../images/blog/recent-posts__data.svg");
+    }
+}
+
+@media(max-width: 1230px) {
+    .blog-page {
+        .recent-posts {
+            display: none;
+        }
+    }
+}

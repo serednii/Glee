@@ -1,0 +1,236 @@
+.filter {
+    &__item {
+        margin-bottom: 70px;
+    }
+
+    &__title-text {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+
+        @extend %dmsans-700;
+
+        font-size: 18px;
+        color: $darkBlue;
+        margin-bottom: 30px;
+        margin-right: 17px;
+    }
+
+    &__title-line {
+        position: absolute;
+        display: inline-block;
+        height: 3px;
+        width: 39px;
+        margin-top: 10px;
+        background-color: $accent;
+    }
+}
+
+
+
+.filter-category {
+    &__input {
+        @extend %checkbox-hidden;
+
+        &:checked+.filter-category__box {
+            background-color: $search;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 23px 16px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__text {
+        @extend %rubik-400;
+
+        color: $darkBlue;
+    }
+}
+
+.filter-price {
+    padding-top: 0;
+
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 28px;
+    }
+}
+
+.filter-price__title {
+    margin-bottom: 0;
+}
+
+.irs--flat .irs-bar {
+    top: 25px;
+    height: 4px;
+    background-color: $accent;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    display: none;
+}
+
+.irs--flat .irs-line {
+    top: 25px;
+    height: 3px;
+    background-color: #c2d2db;
+    border-radius: 4px;
+}
+
+.irs--flat .irs-handle {
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: $accent;
+    cursor: pointer;
+
+}
+
+.irs--flat .irs-handle>i:first-child {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+    background-color: $accent;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    display: none;
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+    background-color: $accent;
+}
+
+.filter-brand {
+    &__input {
+        @extend %checkbox-hidden;
+
+        &:checked+.filter-brand__box {
+            background-color: $search;
+
+            .filter-brand__num {
+                color: $darkBlue;
+            }
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 23px 16px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__text {
+        @extend %rubik-400;
+
+        color: $darkBlue;
+        font-size: 16px;
+    }
+
+    &__num {
+        font-size: 16px;
+
+        @extend %rubik-400;
+
+        color: #b3b3b3;
+    }
+}
+
+.filter-recent {
+    &__label {
+        display: flex;
+        margin-bottom: 23px;
+    }
+
+    &__img {
+        margin-right: 20px;
+        border: 3px solid #f2f2f2;
+        height: 70px;
+        max-width: 70px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__text {
+        font-size: 14px;
+
+        @extend %rubik-400;
+
+        color: #333;
+        margin-bottom: 14px;
+    }
+
+    .star {
+        margin-bottom: 14px;
+        margin-left: -4;
+    }
+
+    &__price {
+        font-size: 15px;
+
+        @extend %rubik-400;
+
+        color: #333;
+    }
+}
+
+@media(max-width: 1230px) {
+    .shop {
+        &__filters {
+            width: 100%;
+            margin-right: 0;
+            display: none;
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            padding: 0 20px;
+            z-index: 100;
+            overflow: auto;
+            background: #fff;
+        }
+
+        &__filter-btn {
+            display: block;
+            border: none;
+            background-color: $accent;
+            padding: 0;
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            right: 0;
+            z-index: 101;
+            bottom: 50px;
+            cursor: pointer;
+
+            img {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: 12px;
+                left: 11px;
+            }
+        }
+    }
+
+    .filter-recent {
+        display: none;
+    }
+}

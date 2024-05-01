@@ -1,0 +1,52 @@
+$accent: #a3bbc8;
+$default: #fcd7b6;
+$title: #436372;
+$search: #edf1f4;
+$line: #fde7d3;
+$darkBlue: #243f4d;
+$lightGray: #ebeef3;
+$Gainsboro: #e0e0e0;
+$lightBlue: #e6eaf0;
+$darkGray: #4c4c4c;
+$VeryLightGray: #f9fafb;
+$VeryLightPink: #fef7f0;
+$VeryDarkBlue: #222933;
+$VeryLightYellow: #feefe2;
+$LightGrayishBlue: #b3b7b5;
+$footer: #7b7b7b;
+
+%dmsans-700 {
+    font-family: 'DMSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%dmsans-400 {
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%rubik-500 {
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%rubik-400 {
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%btn {
+    background-color: $accent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: -4px;
+}
+
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}

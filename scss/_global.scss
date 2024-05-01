@@ -1,0 +1,116 @@
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-size: 15px;
+  color: $darkBlue;
+  min-width: 320px;
+  @extend %rubik-500;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.display-parametr {
+  position: fixed;
+  min-width: 50px;
+  height: 1.5rem;
+  padding: 0 10px;
+  line-height: 1.5rem;
+  background-color: black;
+  color: white;
+  top: 10px;
+  left: 50%;
+  z-index: 1000;
+}
+
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 40px;
+  max-width: 1950px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1790px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container1170 {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  flex-basis: 148px;
+  flex-shrink: 0;
+  padding: 5px;
+
+  &:focus {
+    background-color: $VeryLightGray;
+    border-color: $VeryLightGray;
+    box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
+    outline: 0;
+    border-radius: 10px;
+  }
+
+  img {
+    width: 148px;
+    height: 50px;
+  }
+
+}
+
+.button-favorites.is-add-card,
+.button-cart.is-add-card {
+  background-color: aquamarine;
+  // border: 1px solid red;border
+
+  // path {
+  //   fill: red !important;fill
+  // }
+}
+
+
+
+
+.title {
+  text-align: center;
+
+  @extend %dmsans-700;
+
+  font-size: 36px;
+  line-height: 1.2;
+  color: rgb(25, 25, 25);
+}
+
+
+
+
+@media (max-width: 620px) {
+  .parent {
+    padding-top: 5px;
+  }
+
+  .title {
+    font-size: 33px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 27px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+}

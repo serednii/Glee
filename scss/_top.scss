@@ -1,0 +1,26 @@
+.top {
+    background-color: $search;
+    margin-bottom: 120px;
+
+    &-container {
+        max-width: 1700px;
+        margin: 0 auto;
+        padding: 35px 0;
+    }
+
+    &__title {
+        margin-bottom: 11px;
+    }
+}
+
+@media(width <= 768px) {
+    .top {
+        margin-bottom: 60px;
+    }
+}
+
+@media(width <= 450px) {
+    .top {
+        margin-bottom: 20px;
+    }
+}
